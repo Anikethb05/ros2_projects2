@@ -1,0 +1,9 @@
+/home/aniketh05/ros2_ws/build/my_gesture_arm/CMakeFiles/uninstall.dir
+/home/aniketh05/ros2_ws/build/my_gesture_arm/CMakeFiles/my_gesture_arm_uninstall.dir
+/home/aniketh05/ros2_ws/build/my_gesture_arm/CMakeFiles/test.dir
+/home/aniketh05/ros2_ws/build/my_gesture_arm/CMakeFiles/edit_cache.dir
+/home/aniketh05/ros2_ws/build/my_gesture_arm/CMakeFiles/rebuild_cache.dir
+/home/aniketh05/ros2_ws/build/my_gesture_arm/CMakeFiles/list_install_components.dir
+/home/aniketh05/ros2_ws/build/my_gesture_arm/CMakeFiles/install.dir
+/home/aniketh05/ros2_ws/build/my_gesture_arm/CMakeFiles/install/local.dir
+/home/aniketh05/ros2_ws/build/my_gesture_arm/CMakeFiles/install/strip.dir

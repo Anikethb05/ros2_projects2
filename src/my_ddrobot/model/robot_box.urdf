@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+
+<robot  name="my_robot">
+    <material name="green">
+        <color rgba="0 0.6 0 1" />
+    </material>
+
+
+<!-- Base link ; Body of the robot -->
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <box size="1 1 1" />
+            </geometry>
+            <origin xyz="0 0 0.1" rpy="0 0 0" />
+            <material name="green"/>
+        </visual>
+    </link>
+
+</robot>
