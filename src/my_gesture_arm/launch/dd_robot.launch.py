@@ -7,6 +7,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
 import xacro
 
+
 def generate_launch_description():
     # Robot name and package
     robot_name = 'my_gesture_arm'
@@ -16,7 +17,7 @@ def generate_launch_description():
     model_file_path = os.path.join(
         get_package_share_directory(package_name),
         'model',
-        'my_gesture_arm.xacro'
+        'my_gesture_arm.xacro'  
     )
     
     world_file_path = os.path.join(
@@ -52,11 +53,15 @@ def generate_launch_description():
         output='screen'
     )
 
-    # Joint State Publisher (can also use GUI by changing executable to joint_state_publisher_gui)
+    # Joint State Publisher GUI
     joint_state_publisher_node = Node(
-        package='joint_state_publisher',
-        executable='joint_state_publisher',
+        package='joint_state_publisher_gui',
+        executable='joint_state_publisher_gui',
         name='joint_state_publisher',
+        parameters=[{
+            'use_sim_time': True,
+            'robot_description': robot_description
+        }],
         output='screen'
     )
 
@@ -71,7 +76,6 @@ def generate_launch_description():
         output='screen'
     )
 
-    # Launch Description
     return LaunchDescription([
         gazebo_launch,
         joint_state_publisher_node,
