@@ -1,9 +1,13 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://ros.org/wiki/xacro" name="advanced_gesture_arm">
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="my_gesture_arm">
+  <!-- Include the gazebo specific elements -->
   <xacro:include filename="$(find my_gesture_arm)/model/gesture_arm.gazebo" />
 
+  <!-- Constants -->
   <xacro:property name="PI" value="3.14159"/>
+  <xacro:property name="wheel_radius" value="0.1" />
 
+  <!-- Link and Joint Macros -->
   <xacro:macro name="cylinder_link" params="name radius length xyz rpy color mass">
     <link name="${name}">
       <visual>
@@ -55,19 +59,25 @@
       <inertial>
         <origin xyz="${xyz}" rpy="${rpy}"/>
         <mass value="${mass}"/>
-        <xacro:property name="width" value="${size.split(' ')[0]}"/>
-        <xacro:property name="depth" value="${size.split(' ')[1]}"/>
-        <xacro:property name="height" value="${size.split(' ')[2]}"/>
         <inertia 
-          ixx="${(1/12) * mass * (depth*depth + height*height)}"
+          ixx="${(1/12) * mass * (0.3*0.3 + 0.2*0.2)}"
           ixy="0.0" 
           ixz="0.0" 
-          iyy="${(1/12) * mass * (width*width + height*height)}" 
+          iyy="${(1/12) * mass * (0.3*0.3 + 0.2*0.2)}" 
           iyz="0.0" 
-          izz="${(1/12) * mass * (width*width + depth*depth)}"/>
+          izz="${(1/12) * mass * (0.3*0.3 + 0.3*0.3)}"/>
       </inertial>
     </link>
   </xacro:macro>
+
+  <!-- Base Link -->
+  <link name="base_footprint"/>
+
+  <joint name="base_footprint_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0.1" rpy="0 0 0"/>
+  </joint>
 
   <link name="base_link">
     <visual>
@@ -114,7 +124,7 @@
   </joint>
 
   <!-- Front left wheel -->
-  <xacro:cylinder_link name="front_left_wheel" radius="0.1" length="0.08" xyz="0 0 0" rpy="1.5708 0 0" color="0.0 0.0 0.0 1.0" mass="1.2"/>
+  <xacro:cylinder_link name="front_left_wheel" radius="${wheel_radius}" length="0.08" xyz="0 0 0" rpy="1.5708 0 0" color="0.0 0.0 0.0 1.0" mass="1.2"/>
   <joint name="front_left_wheel_joint" type="continuous">
     <parent link="wheel_mount_plate"/>
     <child link="front_left_wheel"/>
@@ -124,7 +134,7 @@
   </joint>
 
   <!-- Front right wheel -->
-  <xacro:cylinder_link name="front_right_wheel" radius="0.1" length="0.08" xyz="0 0 0" rpy="1.5708 0 0" color="0.0 0.0 0.0 1.0" mass="1.2"/>
+  <xacro:cylinder_link name="front_right_wheel" radius="${wheel_radius}" length="0.08" xyz="0 0 0" rpy="1.5708 0 0" color="0.0 0.0 0.0 1.0" mass="1.2"/>
   <joint name="front_right_wheel_joint" type="continuous">
     <parent link="wheel_mount_plate"/>
     <child link="front_right_wheel"/>
@@ -134,7 +144,7 @@
   </joint>
 
   <!-- Rear left wheel -->
-  <xacro:cylinder_link name="rear_left_wheel" radius="0.1" length="0.08" xyz="0 0 0" rpy="1.5708 0 0" color="0.0 0.0 0.0 1.0" mass="1.2"/>
+  <xacro:cylinder_link name="rear_left_wheel" radius="${wheel_radius}" length="0.08" xyz="0 0 0" rpy="1.5708 0 0" color="0.0 0.0 0.0 1.0" mass="1.2"/>
   <joint name="rear_left_wheel_joint" type="continuous">
     <parent link="wheel_mount_plate"/>
     <child link="rear_left_wheel"/>
@@ -144,7 +154,7 @@
   </joint>
 
   <!-- Rear right wheel -->
-  <xacro:cylinder_link name="rear_right_wheel" radius="0.1" length="0.08" xyz="0 0 0" rpy="1.5708 0 0" color="0.0 0.0 0.0 1.0" mass="1.2"/>
+  <xacro:cylinder_link name="rear_right_wheel" radius="${wheel_radius}" length="0.08" xyz="0 0 0" rpy="1.5708 0 0" color="0.0 0.0 0.0 1.0" mass="1.2"/>
   <joint name="rear_right_wheel_joint" type="continuous">
     <parent link="wheel_mount_plate"/>
     <child link="rear_right_wheel"/>
@@ -158,9 +168,25 @@
   <joint name="camera_joint" type="fixed">
     <parent link="base_link"/>
     <child link="camera_link"/>
-    <origin xyz="0.3 0 0.1" rpy="0 0 0"/>
+    <origin xyz="0.3 0 0.1" rpy="0 -0.2 0"/> 
   </joint>
 
+  <!-- Camera optical frame -->
+  <joint name="camera_optical_joint" type="fixed">
+    <parent link="camera_link"/>
+    <child link="camera_link_optical"/>
+    <origin xyz="0.0 0.0 0.0" rpy="${-PI/2} 0.0 ${-PI/2}"/>
+  </joint>
+
+  <link name="camera_link_optical">
+    <inertial>
+      <mass value="0.001"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+    </inertial>
+  </link>
+
+  <!-- Robot Arm -->
   <xacro:cylinder_link name="arm_mount" radius="0.08" length="0.4" xyz="0 0 0.2" rpy="0 0 0" color="0.4 0.4 0.4 1.0" mass="6.0"/>
   <joint name="arm_mount_joint" type="fixed">
     <parent link="base_link"/>
@@ -255,16 +281,4 @@
   </joint>
   <xacro:box_link name="right_finger" size="0.03 0.01 0.06" xyz="0 0 0.03" rpy="0 0 0" color="1.0 0.5 0.0 1.0" mass="0.05"/>
 
-  <!-- State publisher -->
-  <gazebo>
-    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-      <robotNamespace>/advanced_gesture_arm</robotNamespace>
-    </plugin>
-    <plugin name="gazebo_ros_state" filename="libgazebo_ros_state.so">
-      <robotNamespace>/advanced_gesture_arm</robotNamespace>
-      <publish_rate>50</publish_rate>
-      <publish_tf>true</publish_tf>
-      <publish_joint_states>true</publish_joint_states>
-    </plugin>
-  </gazebo>
 </robot>

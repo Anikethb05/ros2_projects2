@@ -1,12 +1,10 @@
 import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription
+from launch.actions import IncludeLaunchDescription, ExecuteProcess
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-
 from launch_ros.actions import Node
 import xacro
-
 
 def generate_launch_description():
     # Robot name and package
@@ -20,11 +18,18 @@ def generate_launch_description():
         'my_gesture_arm.xacro'  
     )
     
+    # Check if world file exists, otherwise use empty world
     world_file_path = os.path.join(
         get_package_share_directory(package_name),
         'model',
         'empty_world.world'
     )
+    if not os.path.exists(world_file_path):
+        world_file_path = os.path.join(
+            get_package_share_directory('gazebo_ros'),
+            'worlds',
+            'empty.world'
+        )
 
     # Process XACRO file
     robot_description_config = xacro.process_file(model_file_path)
@@ -59,8 +64,7 @@ def generate_launch_description():
         executable='joint_state_publisher_gui',
         name='joint_state_publisher',
         parameters=[{
-            'use_sim_time': True,
-            'robot_description': robot_description
+            'use_sim_time': True
         }],
         output='screen'
     )
@@ -71,14 +75,52 @@ def generate_launch_description():
         executable='spawn_entity.py',
         arguments=[
             '-topic', 'robot_description',
-            '-entity', robot_name
+            '-entity', robot_name,
+            '-z', '0.1'  # Slight elevation to avoid ground clipping
         ],
         output='screen'
     )
+    
+    # RViz for visualization
+    rviz_config_path = os.path.join(
+        get_package_share_directory(package_name),
+        'config',
+        'robot_config.rviz'
+    )
+    
+    rviz_node = Node(
+        package='rviz2',
+        executable='rviz2',
+        name='rviz2',
+        arguments=['-d', rviz_config_path] if os.path.exists(rviz_config_path) else [],
+        parameters=[{'use_sim_time': True}],
+        output='screen'
+    )
+    
+    # Optional: Add keyboard teleop node to control the robot
+    teleop_node = Node(
+        package='teleop_twist_keyboard',
+        executable='teleop_twist_keyboard',
+        prefix='xterm -e',
+        name='teleop',
+        remappings=[('/cmd_vel', '/gesture_arm/cmd_vel')],
+        output='screen'
+    )
 
-    return LaunchDescription([
+    # Define the launch entities
+    launch_entities = [
         gazebo_launch,
-        joint_state_publisher_node,
         robot_state_publisher_node,
-        spawn_entity_node
-    ])
+        joint_state_publisher_node,
+        spawn_entity_node,
+        rviz_node
+    ]
+    
+    # Only add teleop if the package is available
+    try:
+        get_package_share_directory('teleop_twist_keyboard')
+        launch_entities.append(teleop_node)
+    except:
+        pass  # Skip teleop if not installed
+
+    return LaunchDescription(launch_entities)
