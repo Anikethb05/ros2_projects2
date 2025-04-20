@@ -28,16 +28,16 @@
 
  <!-- Wheel properties -->
   <gazebo reference="front_left_wheel">
-    <mu1>0.0001</mu1>
-    <mu2>0.0001</mu2>
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
     <material>Gazebo/Black</material>
     <kp>1000000.0</kp>
     <kd>5.0</kd>
   </gazebo>
 
   <gazebo reference="front_right_wheel">
-    <mu1>0.0001</mu1>
-    <mu2>0.0001</mu2>
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
     <material>Gazebo/Black</material>
     <kp>1000000.0</kp>
     <kd>5.0</kd>

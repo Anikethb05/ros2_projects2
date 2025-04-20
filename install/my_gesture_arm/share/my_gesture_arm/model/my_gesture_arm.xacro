@@ -130,7 +130,7 @@
     <child link="front_left_wheel"/>
     <origin xyz="0.225 0.275 0" rpy="0 0 0"/>
     <axis xyz="0 1 0"/>
-    <dynamics damping="0.5" friction="0.3"/>
+    <dynamics damping="0.1" friction="0.0"/>
   </joint>
 
   <!-- Front right wheel -->
@@ -140,7 +140,7 @@
     <child link="front_right_wheel"/>
     <origin xyz="0.225 -0.275 0" rpy="0 0 0"/>
     <axis xyz="0 1 0"/>
-    <dynamics damping="0.5" friction="0.3"/>
+    <dynamics damping="0.1" friction="0.0"/>
   </joint>
 
   <!-- Rear left wheel -->
@@ -150,7 +150,7 @@
     <child link="rear_left_wheel"/>
     <origin xyz="-0.225 0.275 0" rpy="0 0 0"/>
     <axis xyz="0 1 0"/>
-    <dynamics damping="0.5" friction="0.3"/>
+    <dynamics damping="0.1" friction="0.0"/>
   </joint>
 
   <!-- Rear right wheel -->
@@ -160,7 +160,7 @@
     <child link="rear_right_wheel"/>
     <origin xyz="-0.225 -0.275 0" rpy="0 0 0"/>
     <axis xyz="0 1 0"/>
-    <dynamics damping="0.5" friction="0.3"/>
+    <dynamics damping="0.1" friction="0.0"/>
   </joint>
 
   <!-- Camera link -->
@@ -200,7 +200,7 @@
     <origin xyz="0 0 0.4" rpy="0 0 0"/>
     <axis xyz="0 0 1"/>
     <limit lower="-3.14" upper="3.14" effort="150.0" velocity="2.0"/>
-    <dynamics damping="10.0" friction="2.0"/>
+    <dynamics damping="5.0" friction="5.0"/>
   </joint>
   <xacro:cylinder_link name="shoulder_base" radius="0.07" length="0.08" xyz="0 0 0.04" rpy="0 0 0" color="0.7 0.0 0.0 1.0" mass="2.0"/>
 
@@ -210,7 +210,7 @@
     <origin xyz="0 0 0.08" rpy="0 0 0"/>
     <axis xyz="0 1 0"/>
     <limit lower="-2.0" upper="2.0" effort="120.0" velocity="1.8"/>
-    <dynamics damping="8.0" friction="1.5"/>
+    <dynamics damping="5.0" friction="5.0"/>
   </joint>
   <xacro:cylinder_link name="upper_arm_link" radius="0.05" length="0.3" xyz="0 0 0.15" rpy="0 0 0" color="0.8 0.0 0.0 1.0" mass="1.5"/>
 
@@ -220,7 +220,7 @@
     <origin xyz="0 0 0.3" rpy="0 -0.2 0"/>
     <axis xyz="0 1 0"/>
     <limit lower="-2.5" upper="2.5" effort="80.0" velocity="2.0"/>
-    <dynamics damping="6.0" friction="1.0"/>
+    <dynamics damping="5.0" friction="5.0"/>
   </joint>
   <xacro:cylinder_link name="forearm_link" radius="0.045" length="0.25" xyz="0 0 0.125" rpy="0 0 0" color="0.0 1.0 0.0 1.0" mass="1.0"/>
 
@@ -230,7 +230,7 @@
     <origin xyz="0 0 0.25" rpy="0 -0.1 0"/>
     <axis xyz="1 0 0"/>
     <limit lower="-3.14" upper="3.14" effort="40.0" velocity="3.0"/>
-    <dynamics damping="4.0" friction="0.8"/>
+    <dynamics damping="5.0" friction="5.0"/>
   </joint>
   <xacro:cylinder_link name="wrist_roll_link" radius="0.04" length="0.06" xyz="0 0 0.03" rpy="0 0 0" color="0.0 0.8 0.8 1.0" mass="0.4"/>
 
@@ -240,7 +240,7 @@
     <origin xyz="0 0 0.06" rpy="0 0 0"/>
     <axis xyz="0 1 0"/>
     <limit lower="-1.57" upper="1.57" effort="30.0" velocity="3.0"/>
-    <dynamics damping="3.0" friction="0.6"/>
+    <dynamics damping="5.0" friction="5.0"/>
   </joint>
   <xacro:cylinder_link name="wrist_pitch_link" radius="0.035" length="0.05" xyz="0 0 0.025" rpy="0 0 0" color="1.0 1.0 0.0 1.0" mass="0.3"/>
 

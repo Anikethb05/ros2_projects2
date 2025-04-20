@@ -1,0 +1,24 @@
+yaml
+controller_manager:
+  ros__parameters:
+    update_rate: 50
+    use_sim_time: true
+
+    joint_state_controller:
+      type: joint_state_controller/JointStateController
+
+    steering_controller:
+      type: ackermann_steering_controller/SteeringController
+      ros__parameters:
+        left_steering_joint_name: front_left_steer_joint
+        right_steering_joint_name: front_right_steer_joint
+        wheelbase: 0.45  
+        track_width: 0.55  
+        max_steering_angle: 0.785 
+        command_timeout: 0.5
+        publish_rate: 50
+        cmd_vel_timeout: 0.5
+        cmd_vel_topic: /gesture_arm/cmd_vel
+        odom_topic: /gesture_arm/odom
+        base_frame_id: base_link
+        odom_frame_id: odom
