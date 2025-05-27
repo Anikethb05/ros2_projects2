@@ -1,1 +1,1 @@
-ros2_control;ros2_controllers;joint_state_publisher;robot_state_publisher;gazebo_ros;xacro;ros_gz_bridge;ament_lint_auto;ament_lint_common
+rclpy;geometry_msgs;sensor_msgs;std_msgs;gazebo_ros;robot_state_publisher;controller_manager;ros2_control;position_controllers;joint_state_broadcaster;rviz2;ament_cmake_pytest;ament_lint_auto;ament_lint_common

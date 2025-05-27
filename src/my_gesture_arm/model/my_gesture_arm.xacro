@@ -99,12 +99,12 @@
       <origin xyz="0 0 0.05" rpy="0 0 0"/>
       <mass value="15.0"/>
       <inertia 
-        ixx="0.6" 
+        ixx="${(1/12) * 15.0 * (3*0.35*0.35 + 0.1*0.1)}" 
         ixy="0.0" 
         ixz="0.0" 
-        iyy="0.6" 
+        iyy="${(1/12) * 15.0 * (3*0.35*0.35 + 0.1*0.1)}" 
         iyz="0.0" 
-        izz="1.0"/>
+        izz="${0.5 * 15.0 * 0.35 * 0.35}"/>
     </inertial>
   </link>
 
@@ -128,9 +128,9 @@
   <joint name="front_left_wheel_joint" type="continuous">
     <parent link="wheel_mount_plate"/>
     <child link="front_left_wheel"/>
-    <origin xyz="0.225 0.275 0" rpy="0 0 0"/>
+    <origin xyz="0.225 0.275 -0.05" rpy="0 0 0"/>
     <axis xyz="0 1 0"/>
-    <dynamics damping="0.1" friction="0.0"/>
+    <dynamics damping="0.1" friction="0.1"/>
   </joint>
 
   <!-- Front right wheel -->
@@ -138,9 +138,9 @@
   <joint name="front_right_wheel_joint" type="continuous">
     <parent link="wheel_mount_plate"/>
     <child link="front_right_wheel"/>
-    <origin xyz="0.225 -0.275 0" rpy="0 0 0"/>
+    <origin xyz="0.225 -0.275 -0.05" rpy="0 0 0"/>
     <axis xyz="0 1 0"/>
-    <dynamics damping="0.1" friction="0.0"/>
+    <dynamics damping="0.1" friction="0.1"/>
   </joint>
 
   <!-- Rear left wheel -->
@@ -148,9 +148,9 @@
   <joint name="rear_left_wheel_joint" type="continuous">
     <parent link="wheel_mount_plate"/>
     <child link="rear_left_wheel"/>
-    <origin xyz="-0.225 0.275 0" rpy="0 0 0"/>
+    <origin xyz="-0.225 0.275 -0.05" rpy="0 0 0"/>
     <axis xyz="0 1 0"/>
-    <dynamics damping="0.1" friction="0.0"/>
+    <dynamics damping="0.1" friction="0.1"/>
   </joint>
 
   <!-- Rear right wheel -->
@@ -158,9 +158,17 @@
   <joint name="rear_right_wheel_joint" type="continuous">
     <parent link="wheel_mount_plate"/>
     <child link="rear_right_wheel"/>
-    <origin xyz="-0.225 -0.275 0" rpy="0 0 0"/>
+    <origin xyz="-0.225 -0.275 -0.05" rpy="0 0 0"/>
     <axis xyz="0 1 0"/>
-    <dynamics damping="0.1" friction="0.0"/>
+    <dynamics damping="0.1" friction="0.1"/>
+  </joint>
+
+  <!-- LIDAR Link -->
+  <xacro:box_link name="lidar_link" size="0.05 0.05 0.05" xyz="0 0 0.025" rpy="0 0 0" color="0.1 0.1 0.1 1.0" mass="0.1"/>
+  <joint name="lidar_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="lidar_link"/>
+    <origin xyz="0.3 0 0.15" rpy="0 0 0"/>
   </joint>
 
   <!-- Camera link -->
@@ -281,4 +289,52 @@
   </joint>
   <xacro:box_link name="right_finger" size="0.03 0.01 0.06" xyz="0 0 0.03" rpy="0 0 0" color="1.0 0.5 0.0 1.0" mass="0.05"/>
 
+  <!-- ROS2 Control Hardware Interface -->
+  <ros2_control name="GazeboSystem" type="system">
+    <hardware>
+      <plugin name="gazebo_ros2_control/GazeboSystem"/>
+    </hardware>
+    <joint name="shoulder_yaw_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+    <joint name="shoulder_pitch_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+    <joint name="elbow_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+    <joint name="wrist_roll_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+    <joint name="wrist_pitch_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+    <joint name="left_finger_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+    <joint name="right_finger_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+  </ros2_control>
 </robot>

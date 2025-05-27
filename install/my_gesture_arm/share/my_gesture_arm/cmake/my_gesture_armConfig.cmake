@@ -16,7 +16,7 @@ set(_my_gesture_arm_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT my_gesture_arm_FIND_QUIETLY)
-  message(STATUS "Found my_gesture_arm: 0.0.0 (${my_gesture_arm_DIR})")
+  message(STATUS "Found my_gesture_arm: 0.0.1 (${my_gesture_arm_DIR})")
 endif()
 
 # warn when using a deprecated package

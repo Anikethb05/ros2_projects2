@@ -1,24 +1,152 @@
-yaml
 controller_manager:
   ros__parameters:
-    update_rate: 50
+    update_rate: 100
     use_sim_time: true
 
-    joint_state_controller:
-      type: joint_state_controller/JointStateController
+    diff_drive_controller:
+      type: diff_drive_controller/DiffDriveController
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+    shoulder_yaw_trajectory_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+    shoulder_pitch_trajectory_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+    elbow_trajectory_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+    wrist_roll_trajectory_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+    wrist_pitch_trajectory_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+    gripper_trajectory_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
 
-    steering_controller:
-      type: ackermann_steering_controller/SteeringController
-      ros__parameters:
-        left_steering_joint_name: front_left_steer_joint
-        right_steering_joint_name: front_right_steer_joint
-        wheelbase: 0.45  
-        track_width: 0.55  
-        max_steering_angle: 0.785 
-        command_timeout: 0.5
-        publish_rate: 50
-        cmd_vel_timeout: 0.5
-        cmd_vel_topic: /gesture_arm/cmd_vel
-        odom_topic: /gesture_arm/odom
-        base_frame_id: base_link
-        odom_frame_id: odom
+diff_drive_controller:
+  ros__parameters:
+    use_sim_time: true
+    left_wheel_names: ["front_left_wheel_joint", "rear_left_wheel_joint"]
+    right_wheel_names: ["front_right_wheel_joint", "rear_right_wheel_joint"]
+    wheel_separation: 0.55
+    wheel_radius: 0.1
+    publish_rate: 50.0
+    odom_frame_id: odom
+    base_frame_id: base_footprint
+    enable_odom_tf: true
+    cmd_vel_timeout: 0.5
+
+shoulder_yaw_trajectory_controller:
+  ros__parameters:
+    joints:
+      - shoulder_yaw_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+    state_publish_rate: 50.0
+    action_monitor_rate: 20.0
+    allow_partial_joints_goal: false
+    constraints:
+      stopped_velocity_tolerance: 0.05
+      goal_time: 0.0
+      shoulder_yaw_joint:
+        trajectory: 0.2
+        goal: 0.1
+
+shoulder_pitch_trajectory_controller:
+  ros__parameters:
+    joints:
+      - shoulder_pitch_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+    state_publish_rate: 50.0
+    action_monitor_rate: 20.0
+    allow_partial_joints_goal: false
+    constraints:
+      stopped_velocity_tolerance: 0.05
+      goal_time: 0.0
+      shoulder_pitch_joint:
+        trajectory: 0.2
+        goal: 0.1
+
+elbow_trajectory_controller:
+  ros__parameters:
+    joints:
+      - elbow_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+    state_publish_rate: 50.0
+    action_monitor_rate: 20.0
+    allow_partial_joints_goal: false
+    constraints:
+      stopped_velocity_tolerance: 0.05
+      goal_time: 0.0
+      elbow_joint:
+        trajectory: 0.2
+        goal: 0.1
+
+wrist_roll_trajectory_controller:
+  ros__parameters:
+    joints:
+      - wrist_roll_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+    state_publish_rate: 50.0
+    action_monitor_rate: 20.0
+    allow_partial_joints_goal: false
+    constraints:
+      stopped_velocity_tolerance: 0.05
+      goal_time: 0.0
+      wrist_roll_joint:
+        trajectory: 0.2
+        goal: 0.1
+
+wrist_pitch_trajectory_controller:
+  ros__parameters:
+    joints:
+      - wrist_pitch_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+    state_publish_rate: 50.0
+    action_monitor_rate: 20.0
+    allow_partial_joints_goal: false
+    constraints:
+      stopped_velocity_tolerance: 0.05
+      goal_time: 0.0
+      wrist_pitch_joint:
+        trajectory: 0.2
+        goal: 0.1
+
+gripper_trajectory_controller:
+  ros__parameters:
+    joints:
+      - left_finger_joint
+      - right_finger_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+    state_publish_rate: 50.0
+    action_monitor_rate: 20.0
+    allow_partial_joints_goal: false
+    constraints:
+      stopped_velocity_tolerance: 0.01
+      goal_time: 0.0
+      left_finger_joint:
+        trajectory: 0.05
+        goal: 0.02
+      right_finger_joint:
+        trajectory: 0.05
+        goal: 0.02

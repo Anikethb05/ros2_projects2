@@ -6,6 +6,7 @@
 /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/log/build_2025-04-07_01-31-33/logger_all.log
 /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/log/latest_build
 /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/log/COLCON_IGNORE
+/home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/empty_world.world
 /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/gesture_arm.urdf
 /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/build/.built_by
 /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/build/COLCON_IGNORE
@@ -21,6 +22,7 @@
 /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/install/setup.ps1
 /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/install/COLCON_IGNORE
 /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/install/setup.bash
+/home/aniketh05/ros2_ws/install/my_gesture_arm/lib/my_gesture_arm/teleop_controller.py
 /home/aniketh05/ros2_ws/install/my_gesture_arm/share/ament_index/resource_index/package_run_dependencies/my_gesture_arm
 /home/aniketh05/ros2_ws/install/my_gesture_arm/share/ament_index/resource_index/parent_prefix_path/my_gesture_arm
 /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/environment/ament_prefix_path.sh
