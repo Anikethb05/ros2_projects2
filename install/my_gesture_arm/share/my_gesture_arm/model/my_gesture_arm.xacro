@@ -1,8 +1,6 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="my_gesture_arm">
-  <!-- Include the gazebo specific elements -->
-  <xacro:include filename="$(find my_gesture_arm)/model/gesture_arm.gazebo" />
-
+<xacro:include filename="$(find my_gesture_arm)/model/gesture_arm.gazebo" />
   <!-- Constants -->
   <xacro:property name="PI" value="3.14159"/>
   <xacro:property name="wheel_radius" value="0.1" />
@@ -207,8 +205,8 @@
     <child link="shoulder_base"/>
     <origin xyz="0 0 0.4" rpy="0 0 0"/>
     <axis xyz="0 0 1"/>
-    <limit lower="-3.14" upper="3.14" effort="150.0" velocity="2.0"/>
-    <dynamics damping="5.0" friction="5.0"/>
+    <limit lower="-3.14" upper="3.14" effort="300.0" velocity="2.0"/>
+    <dynamics damping="0.5" friction="0.5"/>
   </joint>
   <xacro:cylinder_link name="shoulder_base" radius="0.07" length="0.08" xyz="0 0 0.04" rpy="0 0 0" color="0.7 0.0 0.0 1.0" mass="2.0"/>
 
@@ -217,8 +215,8 @@
     <child link="upper_arm_link"/>
     <origin xyz="0 0 0.08" rpy="0 0 0"/>
     <axis xyz="0 1 0"/>
-    <limit lower="-2.0" upper="2.0" effort="120.0" velocity="1.8"/>
-    <dynamics damping="5.0" friction="5.0"/>
+    <limit lower="-2.0" upper="2.0" effort="300.0" velocity="1.8"/>
+    <dynamics damping="0.5" friction="0.5"/>
   </joint>
   <xacro:cylinder_link name="upper_arm_link" radius="0.05" length="0.3" xyz="0 0 0.15" rpy="0 0 0" color="0.8 0.0 0.0 1.0" mass="1.5"/>
 
@@ -227,8 +225,8 @@
     <child link="forearm_link"/>
     <origin xyz="0 0 0.3" rpy="0 -0.2 0"/>
     <axis xyz="0 1 0"/>
-    <limit lower="-2.5" upper="2.5" effort="80.0" velocity="2.0"/>
-    <dynamics damping="5.0" friction="5.0"/>
+    <limit lower="-2.5" upper="2.5" effort="300.0" velocity="2.0"/>
+    <dynamics damping="0.5" friction="0.5"/>
   </joint>
   <xacro:cylinder_link name="forearm_link" radius="0.045" length="0.25" xyz="0 0 0.125" rpy="0 0 0" color="0.0 1.0 0.0 1.0" mass="1.0"/>
 
@@ -237,8 +235,8 @@
     <child link="wrist_roll_link"/>
     <origin xyz="0 0 0.25" rpy="0 -0.1 0"/>
     <axis xyz="1 0 0"/>
-    <limit lower="-3.14" upper="3.14" effort="40.0" velocity="3.0"/>
-    <dynamics damping="5.0" friction="5.0"/>
+    <limit lower="-3.14" upper="3.14" effort="300.0" velocity="3.0"/>
+    <dynamics damping="0.5" friction="0.5"/>
   </joint>
   <xacro:cylinder_link name="wrist_roll_link" radius="0.04" length="0.06" xyz="0 0 0.03" rpy="0 0 0" color="0.0 0.8 0.8 1.0" mass="0.4"/>
 
@@ -247,8 +245,8 @@
     <child link="wrist_pitch_link"/>
     <origin xyz="0 0 0.06" rpy="0 0 0"/>
     <axis xyz="0 1 0"/>
-    <limit lower="-1.57" upper="1.57" effort="30.0" velocity="3.0"/>
-    <dynamics damping="5.0" friction="5.0"/>
+    <limit lower="-1.57" upper="1.57" effort="300.0" velocity="3.0"/>
+    <dynamics damping="0.5" friction="0.5"/>
   </joint>
   <xacro:cylinder_link name="wrist_pitch_link" radius="0.035" length="0.05" xyz="0 0 0.025" rpy="0 0 0" color="1.0 1.0 0.0 1.0" mass="0.3"/>
 
@@ -272,7 +270,7 @@
     <child link="left_finger"/>
     <origin xyz="0.04 0.02 0.01" rpy="0 0 0"/>
     <axis xyz="0 1 0"/>
-    <limit lower="0.0" upper="0.03" effort="15.0" velocity="0.5"/>
+    <limit lower="0.0" upper="0.03" effort="50.0" velocity="0.5"/>
     <dynamics damping="0.1" friction="0.05"/>
   </joint>
   <xacro:box_link name="left_finger" size="0.03 0.01 0.06" xyz="0 0 0.03" rpy="0 0 0" color="1.0 0.5 0.0 1.0" mass="0.05"/>
@@ -283,11 +281,13 @@
     <child link="right_finger"/>
     <origin xyz="0.04 -0.02 0.01" rpy="0 0 0"/>
     <axis xyz="0 -1 0"/>
-    <limit lower="0.0" upper="0.03" effort="15.0" velocity="0.5"/>
+    <limit lower="0.0" upper="0.03" effort="50.0" velocity="0.5"/>
     <dynamics damping="0.1" friction="0.05"/>
     <mimic joint="left_finger_joint" multiplier="1" offset="0"/>
   </joint>
   <xacro:box_link name="right_finger" size="0.03 0.01 0.06" xyz="0 0 0.03" rpy="0 0 0" color="1.0 0.5 0.0 1.0" mass="0.05"/>
+
+
 
   <!-- ROS2 Control Hardware Interface -->
   <ros2_control name="GazeboSystem" type="system">

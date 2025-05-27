@@ -25,7 +25,7 @@ def generate_launch_description():
     world_file_path = os.path.join(
         get_package_share_directory(package_name),
         'model',
-        'empty_world.world'
+        'task_world.world'
     )
 
     # Process XACRO file
@@ -70,7 +70,10 @@ def generate_launch_description():
         arguments=[
             '-topic', '/robot_description',
             '-entity', robot_name,
-            '-z', '0.0'
+            '-x', '0.0',
+            '-y', '0.0',
+            '-z', '0.0',
+            '-Y', '0.0'  # Yaw orientation (radians)
         ],
         output='screen'
     )
@@ -135,14 +138,8 @@ def generate_launch_description():
         additional_env={'PYTHONUNBUFFERED': '1'},
         condition=IfCondition(use_sim_time)
     )
-    load_left_finger_controller = ExecuteProcess(
-        cmd=['ros2', 'control', 'load_controller', '--set-state', 'active', 'left_finger_joint_controller'],
-        output='screen',
-        additional_env={'PYTHONUNBUFFERED': '1'},
-        condition=IfCondition(use_sim_time)
-    )
-    load_right_finger_controller = ExecuteProcess(
-        cmd=['ros2', 'control', 'load_controller', '--set-state', 'active', 'right_finger_joint_controller'],
+    load_gripper_controller = ExecuteProcess(
+        cmd=['ros2', 'control', 'load_controller', '--set-state', 'active', 'gripper_controller'],
         output='screen',
         additional_env={'PYTHONUNBUFFERED': '1'},
         condition=IfCondition(use_sim_time)
@@ -162,6 +159,5 @@ def generate_launch_description():
         load_elbow_controller,
         load_wrist_roll_controller,
         load_wrist_pitch_controller,
-        load_left_finger_controller,
-        load_right_finger_controller
+        load_gripper_controller
     ])

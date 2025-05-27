@@ -24,8 +24,9 @@ install(
   DESTINATION share/${PROJECT_NAME}
 )
 
-install(PROGRAMS
-  scripts/teleop_controller.py
+install(
+  PROGRAMS
+    scripts/teleop_controller.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
