@@ -1,0 +1,1 @@
+Invoking command in '/home/aniketh05/ros2_ws/build/config': /usr/bin/cmake /home/aniketh05/ros2_ws/~/ros2_ws/src/my_gesture_arm/config -DCMAKE_INSTALL_PREFIX=/home/aniketh05/ros2_ws/install/config

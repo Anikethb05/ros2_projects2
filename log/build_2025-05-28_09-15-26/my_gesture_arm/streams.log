@@ -1,0 +1,10 @@
+[0.045s] Invoking command in '/home/aniketh05/ros2_ws/build/my_gesture_arm': /usr/bin/cmake --build /home/aniketh05/ros2_ws/build/my_gesture_arm -- -j12 -l12
+[0.082s] [31mCMake Error at CMakeLists.txt:4:
+[0.082s]   Parse error.  Expected a newline, got identifier with text
+[0.082s]   "add_compile_options".
+[0.082s] 
+[0.082s] [0m
+[0.084s] -- Configuring incomplete, errors occurred!
+[0.084s] See also "/home/aniketh05/ros2_ws/build/my_gesture_arm/CMakeFiles/CMakeOutput.log".
+[0.088s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.095s] Invoked command in '/home/aniketh05/ros2_ws/build/my_gesture_arm' returned '2': /usr/bin/cmake --build /home/aniketh05/ros2_ws/build/my_gesture_arm -- -j12 -l12

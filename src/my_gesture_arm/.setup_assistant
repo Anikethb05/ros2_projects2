@@ -1,0 +1,10 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: my_gesture_arm
+    relative_path: model/my_gesture_arm.xacro
+  srdf:
+    relative_path: config/my_gesture_arm.srdf
+  package_settings:
+    author_name: "Aniketh"
+    author_email: "anikethbhargav05@gmail.com"
+    generated_timestamp: 1748399792

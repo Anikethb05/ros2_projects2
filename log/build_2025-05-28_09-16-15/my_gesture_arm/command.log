@@ -1,0 +1,1 @@
+Invoking command in '/home/aniketh05/ros2_ws/build/my_gesture_arm': /usr/bin/cmake --build /home/aniketh05/ros2_ws/build/my_gesture_arm -- -j12 -l12

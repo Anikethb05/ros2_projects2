@@ -1,0 +1,45 @@
+[0.061s] Invoking command in '/home/aniketh05/ros2_ws/build/config': /usr/bin/cmake /home/aniketh05/ros2_ws/~/ros2_ws/src/my_gesture_arm/config -DCMAKE_INSTALL_PREFIX=/home/aniketh05/ros2_ws/install/config
+[0.496s] -- The C compiler identification is GNU 11.4.0
+[1.074s] -- The CXX compiler identification is GNU 11.4.0
+[1.333s] -- Detecting C compiler ABI info
+[1.495s] -- Detecting C compiler ABI info - done
+[1.506s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.507s] -- Detecting C compile features
+[1.509s] -- Detecting C compile features - done
+[1.514s] -- Detecting CXX compiler ABI info
+[1.695s] -- Detecting CXX compiler ABI info - done
+[1.704s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.704s] -- Detecting CXX compile features
+[1.705s] -- Detecting CXX compile features - done
+[1.711s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.920s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.109s] Error parsing '/home/aniketh05/ros2_ws/~/ros2_ws/src/my_gesture_arm/config/package.xml':
+[2.177s] Traceback (most recent call last):
+[2.178s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[2.178s]     main()
+[2.178s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[2.178s]     raise e
+[2.178s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[2.178s]     package = parse_package_string(
+[2.178s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 788, in parse_package_string
+[2.178s]     pkg.validate(warnings=warnings)
+[2.178s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 330, in validate
+[2.178s]     raise InvalidPackage('\n'.join(errors), self.filename)
+[2.178s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/aniketh05/ros2_ws/~/ros2_ws/src/my_gesture_arm/config/package.xml':
+[2.178s] Invalid email "" for person ""
+[2.178s] Maintainers must have an email address
+[2.179s] Invalid email "" for person ""
+[2.201s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[2.201s]   execute_process(/usr/bin/python3
+[2.201s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[2.201s]   /home/aniketh05/ros2_ws/~/ros2_ws/src/my_gesture_arm/config/package.xml
+[2.201s]   /home/aniketh05/ros2_ws/build/config/ament_cmake_core/package.cmake)
+[2.201s]   returned error code 1
+[2.201s] Call Stack (most recent call first):
+[2.201s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[2.201s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+[2.201s]   CMakeLists.txt:6 (ament_package)
+[2.202s] 
+[2.202s] [0m
+[2.202s] -- Configuring incomplete, errors occurred!
+[2.202s] See also "/home/aniketh05/ros2_ws/build/config/CMakeFiles/CMakeOutput.log".

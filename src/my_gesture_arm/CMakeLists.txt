@@ -27,6 +27,7 @@ install(
 install(
   PROGRAMS
     scripts/teleop_controller.py
+    scripts/autonomous_robot_controller.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

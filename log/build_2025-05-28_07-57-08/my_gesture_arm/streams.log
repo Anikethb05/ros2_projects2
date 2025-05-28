@@ -1,0 +1,151 @@
+[0.019s] Invoking command in '/home/aniketh05/ros2_ws/build/my_gesture_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aniketh05/my_ros2_ws/install/turtle_control:/home/aniketh05/my_ros2_ws/install/my_services:/home/aniketh05/my_ros2_ws/install/my_pkg_prac:/home/aniketh05/my_ros2_ws/install/my_pkg_01:/opt/ros/humble /usr/bin/cmake /home/aniketh05/ros2_ws/src/my_gesture_arm -DCMAKE_INSTALL_PREFIX=/home/aniketh05/ros2_ws/install/my_gesture_arm
+[0.033s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.221s] -- Found rclpy: 3.3.16 (/opt/ros/humble/share/rclpy/cmake)
+[0.221s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.414s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.418s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.427s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.441s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.464s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.529s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.548s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.568s] -- Found visualization_msgs: 4.8.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.590s] -- Found moveit_msgs: 2.2.1 (/opt/ros/humble/share/moveit_msgs/cmake)
+[0.725s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.782s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.783s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[7.586s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.670s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[7.698s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[7.723s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[7.724s] -- Looking for ignition-math6 -- found version 6.15.1
+[7.729s] -- Searching for dependencies of ignition-math6
+[7.732s] -- Looking for OGRE...
+[7.739s] -- Found Ogre Ghadamon (1.9.0)
+[7.739s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[7.749s] -- Looking for OGRE_Paging...
+[7.749s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[7.750s] -- Looking for OGRE_Terrain...
+[7.750s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[7.750s] -- Looking for OGRE_Property...
+[7.750s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[7.750s] -- Looking for OGRE_RTShaderSystem...
+[7.751s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[7.751s] -- Looking for OGRE_Volume...
+[7.751s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[7.751s] -- Looking for OGRE_Overlay...
+[7.751s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[28.713s] -- Looking for ignition-math6 -- found version 6.15.1
+[28.714s] -- Looking for ignition-transport8 -- found version 8.2.1
+[28.714s] -- Searching for dependencies of ignition-transport8
+[30.213s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[31.637s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[31.641s] -- Checking for module 'libzmq >= 4'
+[31.651s] --   Found libzmq , version 4.3.4
+[31.679s] -- Checking for module 'uuid'
+[31.687s] --   Found uuid, version 2.37.2
+[31.709s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[31.709s] -- Searching for dependencies of ignition-msgs5
+[33.220s] -- Looking for ignition-math6 -- found version 6.15.1
+[33.223s] -- Checking for module 'tinyxml2'
+[33.234s] --   Found tinyxml2, version 9.0.0
+[33.256s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[33.256s] -- Looking for ignition-common3 -- found version 3.14.0
+[33.256s] -- Searching for dependencies of ignition-common3
+[33.256s] -- Looking for dlfcn.h - found
+[33.256s] -- Looking for libdl - found
+[33.347s] -- Searching for <ignition-common3> component [graphics]
+[33.347s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[33.348s] -- Searching for dependencies of ignition-common3-graphics
+[33.348s] -- Looking for ignition-math6 -- found version 6.15.1
+[33.349s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[33.349s] -- Searching for dependencies of ignition-fuel_tools4
+[35.179s] -- Checking for module 'jsoncpp'
+[35.190s] --   Found jsoncpp, version 1.9.5
+[35.219s] -- Checking for module 'libzip'
+[35.229s] --   Found libzip, version 1.7.3
+[35.255s] -- Looking for ignition-common3 -- found version 3.14.0
+[35.256s] -- Looking for ignition-math6 -- found version 6.15.1
+[35.256s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[35.257s] -- Gazebo version: 11.10
+[35.258s] -- Found gazebo_ros2_control: 0.4.10 (/opt/ros/humble/share/gazebo_ros2_control/cmake)
+[36.889s] -- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)
+[36.892s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[36.893s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[36.902s] -- Found rviz2: 11.2.17 (/opt/ros/humble/share/rviz2/cmake)
+[36.903s] -- Found ros2_control: 2.50.0 (/opt/ros/humble/share/ros2_control/cmake)
+[36.905s] -- Found position_controllers: 2.45.0 (/opt/ros/humble/share/position_controllers/cmake)
+[36.933s] -- Found joint_state_broadcaster: 2.45.0 (/opt/ros/humble/share/joint_state_broadcaster/cmake)
+[36.943s] -- Found moveit_ros_move_group: 2.5.9 (/opt/ros/humble/share/moveit_ros_move_group/cmake)
+[36.947s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[36.972s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[38.325s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[39.790s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[39.832s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[39.844s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[39.912s] -- Added test 'flake8' to check Python code syntax and style conventions
+[39.912s] -- Added test 'lint_cmake' to check CMake code style
+[39.913s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[39.915s] -- Added test 'xmllint' to check XML markup files
+[39.916s] -- Configuring done
+[39.922s] -- Generating done
+[39.924s] -- Build files have been written to: /home/aniketh05/ros2_ws/build/my_gesture_arm
+[39.936s] Invoked command in '/home/aniketh05/ros2_ws/build/my_gesture_arm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aniketh05/my_ros2_ws/install/turtle_control:/home/aniketh05/my_ros2_ws/install/my_services:/home/aniketh05/my_ros2_ws/install/my_pkg_prac:/home/aniketh05/my_ros2_ws/install/my_pkg_01:/opt/ros/humble /usr/bin/cmake /home/aniketh05/ros2_ws/src/my_gesture_arm -DCMAKE_INSTALL_PREFIX=/home/aniketh05/ros2_ws/install/my_gesture_arm
+[39.938s] Invoking command in '/home/aniketh05/ros2_ws/build/my_gesture_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aniketh05/my_ros2_ws/install/turtle_control:/home/aniketh05/my_ros2_ws/install/my_services:/home/aniketh05/my_ros2_ws/install/my_pkg_prac:/home/aniketh05/my_ros2_ws/install/my_pkg_01:/opt/ros/humble /usr/bin/cmake --build /home/aniketh05/ros2_ws/build/my_gesture_arm -- -j12 -l12
+[39.967s] Invoked command in '/home/aniketh05/ros2_ws/build/my_gesture_arm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aniketh05/my_ros2_ws/install/turtle_control:/home/aniketh05/my_ros2_ws/install/my_services:/home/aniketh05/my_ros2_ws/install/my_pkg_prac:/home/aniketh05/my_ros2_ws/install/my_pkg_01:/opt/ros/humble /usr/bin/cmake --build /home/aniketh05/ros2_ws/build/my_gesture_arm -- -j12 -l12
+[39.975s] Invoking command in '/home/aniketh05/ros2_ws/build/my_gesture_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aniketh05/my_ros2_ws/install/turtle_control:/home/aniketh05/my_ros2_ws/install/my_services:/home/aniketh05/my_ros2_ws/install/my_pkg_prac:/home/aniketh05/my_ros2_ws/install/my_pkg_01:/opt/ros/humble /usr/bin/cmake --install /home/aniketh05/ros2_ws/build/my_gesture_arm
+[39.980s] -- Install configuration: ""
+[39.980s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/launch
+[39.980s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/launch/moveit.launch.py
+[39.980s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/launch/autonomous_robot.launch.py
+[39.980s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/launch/dd_robot.launch.py
+[39.981s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/config
+[39.981s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/config/robot_config.rviz
+[39.982s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/config/controllers.yaml
+[39.982s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model
+[39.982s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/gesture_arm.gazebo
+[39.982s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/my_gesture_arm.xacro
+[39.982s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/log
+[39.982s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/log/latest
+[39.983s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/log/build_2025-04-07_01-31-33
+[39.983s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/log/build_2025-04-07_01-31-33/events.log
+[39.983s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/log/build_2025-04-07_01-31-33/logger_all.log
+[39.984s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/log/latest_build
+[39.984s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/log/COLCON_IGNORE
+[39.984s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/empty_world.world
+[39.984s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/gesture_arm.urdf
+[39.985s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/task_world.world
+[39.985s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/build
+[39.985s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/build/.built_by
+[39.985s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/build/COLCON_IGNORE
+[39.986s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/install
+[39.986s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/install/_local_setup_util_ps1.py
+[39.986s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/install/setup.zsh
+[39.986s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/install/.colcon_install_layout
+[39.987s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/install/_local_setup_util_sh.py
+[39.987s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/install/local_setup.sh
+[39.987s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/install/local_setup.bash
+[39.987s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/install/local_setup.zsh
+[39.987s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/install/local_setup.ps1
+[39.988s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/install/setup.sh
+[39.988s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/install/setup.ps1
+[39.989s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/install/COLCON_IGNORE
+[39.989s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/install/setup.bash
+[39.990s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/lib/my_gesture_arm/teleop_controller.py
+[39.990s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/lib/my_gesture_arm/autonomous_robot_controller.py
+[39.990s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/ament_index/resource_index/package_run_dependencies/my_gesture_arm
+[39.991s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/ament_index/resource_index/parent_prefix_path/my_gesture_arm
+[39.991s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/environment/ament_prefix_path.sh
+[39.991s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/environment/ament_prefix_path.dsv
+[39.991s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/environment/path.sh
+[39.992s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/environment/path.dsv
+[39.992s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/local_setup.bash
+[39.992s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/local_setup.sh
+[39.992s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/local_setup.zsh
+[39.992s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/local_setup.dsv
+[39.992s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/package.dsv
+[39.992s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/ament_index/resource_index/packages/my_gesture_arm
+[39.992s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/cmake/my_gesture_armConfig.cmake
+[39.992s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/cmake/my_gesture_armConfig-version.cmake
+[39.992s] -- Installing: /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/package.xml
+[39.994s] Invoked command in '/home/aniketh05/ros2_ws/build/my_gesture_arm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aniketh05/my_ros2_ws/install/turtle_control:/home/aniketh05/my_ros2_ws/install/my_services:/home/aniketh05/my_ros2_ws/install/my_pkg_prac:/home/aniketh05/my_ros2_ws/install/my_pkg_01:/opt/ros/humble /usr/bin/cmake --install /home/aniketh05/ros2_ws/build/my_gesture_arm

@@ -1,0 +1,6 @@
+[31mCMake Error at CMakeLists.txt:4:
+  Parse error.  Expected a newline, got identifier with text
+  "add_compile_options".
+
+[0m
+gmake: *** [Makefile:226: cmake_check_build_system] Error 1

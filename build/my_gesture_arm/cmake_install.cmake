@@ -50,7 +50,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/my_gesture_arm" TYPE PROGRAM FILES "/home/aniketh05/ros2_ws/src/my_gesture_arm/scripts/teleop_controller.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/my_gesture_arm" TYPE PROGRAM FILES
+    "/home/aniketh05/ros2_ws/src/my_gesture_arm/scripts/teleop_controller.py"
+    "/home/aniketh05/ros2_ws/src/my_gesture_arm/scripts/autonomous_robot_controller.py"
+    )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

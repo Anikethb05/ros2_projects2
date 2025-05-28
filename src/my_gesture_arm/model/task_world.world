@@ -1,6 +1,7 @@
 <?xml version="1.0" ?>
 <sdf version="1.7">
   <world name="task_world">
+
     <!-- Ground Plane -->
     <model name="ground_plane">
       <static>true</static>
@@ -9,7 +10,7 @@
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>100 100</size>
+              <size>20 20</size>  <!-- Adjusted to match smaller area -->
             </plane>
           </geometry>
           <surface>
@@ -25,7 +26,7 @@
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>100 100</size>
+              <size>20 20</size>
             </plane>
           </geometry>
           <material>
@@ -41,26 +42,15 @@
     <!-- Boundaries (Walls) -->
     <model name="wall_north">
       <static>true</static>
-      <pose>0 5.0 0.5 0 0 0</pose>
+      <pose>0 5 0.5 0 0 0</pose>  <!-- moved from y=10 to y=5 -->
       <link name="link">
         <collision name="collision">
-          <geometry>
-            <box>
-              <size>5.0 0.1 1.0</size>
-            </box>
-          </geometry>
+          <geometry><box><size>10.0 0.1 1.0</size></box></geometry>
         </collision>
         <visual name="visual">
-          <geometry>
-            <box>
-              <size>5.0 0.1 1.0</size>
-            </box>
-          </geometry>
+          <geometry><box><size>10.0 0.1 1.0</size></box></geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
+            <script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/White</name></script>
           </material>
         </visual>
       </link>
@@ -68,26 +58,15 @@
 
     <model name="wall_south">
       <static>true</static>
-      <pose>0 -5.0 0.5 0 0 0</pose>
+      <pose>0 -5 0.5 0 0 0</pose>  <!-- moved from y=-10 to y=-5 -->
       <link name="link">
         <collision name="collision">
-          <geometry>
-            <box>
-              <size>5.0 0.1 1.0</size>
-            </box>
-          </geometry>
+          <geometry><box><size>10.0 0.1 1.0</size></box></geometry>
         </collision>
         <visual name="visual">
-          <geometry>
-            <box>
-              <size>5.0 0.1 1.0</size>
-            </box>
-          </geometry>
+          <geometry><box><size>10.0 0.1 1.0</size></box></geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
+            <script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/White</name></script>
           </material>
         </visual>
       </link>
@@ -95,26 +74,15 @@
 
     <model name="wall_east">
       <static>true</static>
-      <pose>5.0 0 0.5 0 0 1.5708</pose>
+      <pose>5 0 0.5 0 0 1.5708</pose>  <!-- moved from x=10 to x=5 -->
       <link name="link">
         <collision name="collision">
-          <geometry>
-            <box>
-              <size>5.0 0.1 1.0</size>
-            </box>
-          </geometry>
+          <geometry><box><size>10.0 0.1 1.0</size></box></geometry>
         </collision>
         <visual name="visual">
-          <geometry>
-            <box>
-              <size>5.0 0.1 1.0</size>
-            </box>
-          </geometry>
+          <geometry><box><size>10.0 0.1 1.0</size></box></geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
+            <script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/White</name></script>
           </material>
         </visual>
       </link>
@@ -122,40 +90,104 @@
 
     <model name="wall_west">
       <static>true</static>
-      <pose>-5.0 0 0.5 0 0 1.5708</pose>
+      <pose>-5 0 0.5 0 0 1.5708</pose>  <!-- moved from x=-10 to x=-5 -->
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>10.0 0.1 1.0</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>10.0 0.1 1.0</size></box></geometry>
+          <material>
+            <script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/White</name></script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Obstacles - all repositioned to fit inside 10x10 -->
+    <model name="obstacle1">
+      <static>true</static>
+      <pose>-2 2 0.5 0 0 0</pose> <!-- moved from -5,5 to -2,2 -->
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>1 1 1</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>1 1 1</size></box></geometry>
+          <material>
+            <script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Red</name></script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="obstacle2">
+      <static>true</static>
+      <pose>2 2 0.5 0 0 0</pose> <!-- moved from 5,5 to 2,2 -->
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>1 1 1</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>1 1 1</size></box></geometry>
+          <material>
+            <script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Red</name></script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="obstacle3">
+      <static>true</static>
+      <pose>0 -2 0.5 0 0 0</pose> <!-- moved from 0,-3 to 0,-2 -->
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>2 1 1</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>2 1 1</size></box></geometry>
+          <material>
+            <script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Red</name></script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="obstacle_4">
+      <static>true</static>
+      <pose>-2.0 4.5 0.25 0 0 0</pose> <!-- moved from -4,11 to -2,4.5 inside -->
       <link name="link">
         <collision name="collision">
           <geometry>
             <box>
-              <size>5.0 0.1 1.0</size>
+              <size>0.6 0.6 0.5</size>
             </box>
           </geometry>
         </collision>
         <visual name="visual">
           <geometry>
             <box>
-              <size>5.0 0.1 1.0</size>
+              <size>0.6 0.6 0.5</size>
             </box>
           </geometry>
           <material>
             <script>
               <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
+              <name>Gazebo/Orange</name>
             </script>
           </material>
         </visual>
       </link>
     </model>
 
-    <!-- Obstacles -->
-    <model name="obstacle_1">
+    <model name="obstacle_5">
       <static>true</static>
-      <pose>1.0 1.0 0.25 0 0 0</pose>
+      <pose>2.0 -4.5 0.25 0 0 0</pose> <!-- moved from 4,-11 to 2,-4.5 inside -->
       <link name="link">
         <collision name="collision">
           <geometry>
             <cylinder>
-              <radius>0.2</radius>
+              <radius>0.3</radius>
               <height>0.5</height>
             </cylinder>
           </geometry>
@@ -163,41 +195,14 @@
         <visual name="visual">
           <geometry>
             <cylinder>
-              <radius>0.2</radius>
+              <radius>0.3</radius>
               <height>0.5</height>
             </cylinder>
           </geometry>
           <material>
             <script>
               <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Red</name>
-            </script>
-          </material>
-        </visual>
-      </link>
-    </model>
-
-    <model name="obstacle_2">
-      <static>true</static>
-      <pose>-1.0 -1.0 0.25 0 0 0</pose>
-      <link name="link">
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.4 0.4 0.5</size>
-            </box>
-          </geometry>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.4 0.4 0.5</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Blue</name>
+              <name>Gazebo/Purple</name>
             </script>
           </material>
         </visual>
@@ -206,7 +211,7 @@
 
     <!-- Pickable Object -->
     <model name="pickable_object">
-      <pose>2.0 2.0 0.05 0 0 0</pose>
+      <pose>4 4 0.05 0 0 0</pose> <!-- moved from 10,10 to 4,4 -->
       <link name="link">
         <collision name="collision">
           <geometry>
@@ -256,5 +261,6 @@
       <real_time_factor>1.0</real_time_factor>
       <real_time_update_rate>1000</real_time_update_rate>
     </physics>
+
   </world>
 </sdf>

@@ -1,3 +1,4 @@
+/home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/launch/autonomous_robot.launch.py
 /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/launch/dd_robot.launch.py
 /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/gesture_arm.gazebo
 /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/my_gesture_arm.xacro
@@ -24,6 +25,7 @@
 /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/install/COLCON_IGNORE
 /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/model/install/setup.bash
 /home/aniketh05/ros2_ws/install/my_gesture_arm/lib/my_gesture_arm/teleop_controller.py
+/home/aniketh05/ros2_ws/install/my_gesture_arm/lib/my_gesture_arm/autonomous_robot_controller.py
 /home/aniketh05/ros2_ws/install/my_gesture_arm/share/ament_index/resource_index/package_run_dependencies/my_gesture_arm
 /home/aniketh05/ros2_ws/install/my_gesture_arm/share/ament_index/resource_index/parent_prefix_path/my_gesture_arm
 /home/aniketh05/ros2_ws/install/my_gesture_arm/share/my_gesture_arm/environment/ament_prefix_path.sh
