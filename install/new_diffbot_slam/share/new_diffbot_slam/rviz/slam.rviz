@@ -1,0 +1,21 @@
+rviz:
+  Displays:
+    - Class: rviz_default_plugins/Map
+      Topic: /map
+      Name: Map
+      Enabled: true
+    - Class: rviz_default_plugins/RobotModel
+      Name: RobotModel
+      Enabled: true
+    - Class: rviz_default_plugins/LaserScan
+      Topic: /scan
+      Name: LaserScan
+      Enabled: true
+    - Class: rviz_default_plugins/Image
+      Topic: /diffbot/camera/image_raw
+      Name: Camera
+      Enabled: true
+    - Class: rviz_default_plugins/PointCloud2
+      Topic: /diffbot/kimera_vio_ros/pointcloud
+      Name: KimeraVIO_PointCloud
+      Enabled: true

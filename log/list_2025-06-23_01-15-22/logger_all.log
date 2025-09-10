@@ -1,0 +1,109 @@
+[0.214s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/aniketh05/ros2_ws']
+[0.214s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/aniketh05/ros2_ws'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7c7edc58cbb0>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7c7edc54faf0>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7c7edc54faf0>>, mixin_verb=('list',))
+[0.415s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.416s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.416s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.416s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.416s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.416s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/aniketh05/ros2_ws'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws) by extension 'ignore'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws) by extension 'ignore_ament_install'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws) by extensions ['colcon_pkg']
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws) by extension 'colcon_pkg'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws) by extensions ['colcon_meta']
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws) by extension 'colcon_meta'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws) by extensions ['ros']
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws) by extension 'ros'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws) by extensions ['cmake', 'python']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws) by extension 'cmake'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws) by extension 'python'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws) by extensions ['python_setup_py']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws) by extension 'python_setup_py'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/build) by extension 'ignore'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/build) ignored
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/install) by extension 'ignore'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/install) ignored
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/log) by extension 'ignore'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/log) ignored
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src) by extension 'ignore'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src) by extension 'ignore_ament_install'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src) by extensions ['colcon_pkg']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src) by extension 'colcon_pkg'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src) by extensions ['colcon_meta']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src) by extension 'colcon_meta'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src) by extensions ['ros']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src) by extension 'ros'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src) by extensions ['cmake', 'python']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src) by extension 'cmake'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src) by extension 'python'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src) by extensions ['python_setup_py']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src) by extension 'python_setup_py'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/Kimera-Multi) by extensions ['ignore', 'ignore_ament_install']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/Kimera-Multi) by extension 'ignore'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/Kimera-Multi) by extension 'ignore_ament_install'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/Kimera-Multi) by extensions ['colcon_pkg']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/Kimera-Multi) by extension 'colcon_pkg'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/Kimera-Multi) by extensions ['colcon_meta']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/Kimera-Multi) by extension 'colcon_meta'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/Kimera-Multi) by extensions ['ros']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/Kimera-Multi) by extension 'ros'
+[0.436s] DEBUG:colcon.colcon_core.package_identification:Package '/home/aniketh05/ros2_ws/src/Kimera-Multi' with type 'ros.catkin' and name 'kimera_multi'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/my_ddrobot) by extensions ['ignore', 'ignore_ament_install']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/my_ddrobot) by extension 'ignore'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/my_ddrobot) by extension 'ignore_ament_install'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/my_ddrobot) by extensions ['colcon_pkg']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/my_ddrobot) by extension 'colcon_pkg'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/my_ddrobot) by extensions ['colcon_meta']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/my_ddrobot) by extension 'colcon_meta'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/my_ddrobot) by extensions ['ros']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/my_ddrobot) by extension 'ros'
+[0.438s] DEBUG:colcon.colcon_core.package_identification:Package '/home/aniketh05/ros2_ws/src/my_ddrobot' with type 'ros.ament_cmake' and name 'my_ddrobot'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/my_gesture_arm) by extensions ['ignore', 'ignore_ament_install']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/my_gesture_arm) by extension 'ignore'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/my_gesture_arm) by extension 'ignore_ament_install'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/my_gesture_arm) by extensions ['colcon_pkg']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/my_gesture_arm) by extension 'colcon_pkg'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/my_gesture_arm) by extensions ['colcon_meta']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/my_gesture_arm) by extension 'colcon_meta'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/my_gesture_arm) by extensions ['ros']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/my_gesture_arm) by extension 'ros'
+[0.450s] DEBUG:colcon.colcon_core.package_identification:Package '/home/aniketh05/ros2_ws/src/my_gesture_arm' with type 'ros.ament_cmake' and name 'my_gesture_arm'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/navigation_tb3) by extensions ['ignore', 'ignore_ament_install']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/navigation_tb3) by extension 'ignore'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/navigation_tb3) by extension 'ignore_ament_install'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/navigation_tb3) by extensions ['colcon_pkg']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/navigation_tb3) by extension 'colcon_pkg'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/navigation_tb3) by extensions ['colcon_meta']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/navigation_tb3) by extension 'colcon_meta'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/navigation_tb3) by extensions ['ros']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/navigation_tb3) by extension 'ros'
+[0.451s] DEBUG:colcon.colcon_core.package_identification:Package '/home/aniketh05/ros2_ws/src/navigation_tb3' with type 'ros.ament_cmake' and name 'navigation_tb3'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/new_diffbot_slam) by extensions ['ignore', 'ignore_ament_install']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/new_diffbot_slam) by extension 'ignore'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/new_diffbot_slam) by extension 'ignore_ament_install'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/new_diffbot_slam) by extensions ['colcon_pkg']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/new_diffbot_slam) by extension 'colcon_pkg'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/new_diffbot_slam) by extensions ['colcon_meta']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/new_diffbot_slam) by extension 'colcon_meta'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/new_diffbot_slam) by extensions ['ros']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/new_diffbot_slam) by extension 'ros'
+[0.452s] DEBUG:colcon.colcon_core.package_identification:Found ROS schema reference in package manifest in '/home/aniketh05/ros2_ws/src/new_diffbot_slam'
+[0.452s] WARNING:colcon.colcon_core.package_identification:Failed to parse ROS package manifest in '/home/aniketh05/ros2_ws/src/new_diffbot_slam': Error(s) in package '/home/aniketh05/ros2_ws/src/new_diffbot_slam/package.xml':
+Error(s):
+- The generic dependency on 'kimera_vio_ros' is redundant with: build_depend, build_export_depend, exec_depend
+- The generic dependency on 'slam_toolbox' is redundant with: build_depend, build_export_depend, exec_depend
+- The generic dependency on 'sensor_msgs' is redundant with: build_depend, build_export_depend, exec_depend
+- The generic dependency on 'nav_msgs' is redundant with: build_depend, build_export_depend, exec_depend
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/new_diffbot_slam) by extensions ['cmake', 'python']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/new_diffbot_slam) by extension 'cmake'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/new_diffbot_slam) by extension 'python'
+[0.453s] DEBUG:colcon.colcon_core.package_identification:Python package in '/home/aniketh05/ros2_ws/src/new_diffbot_slam' passes arguments to the setup() function which requires a different identification extension than 'python'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/new_diffbot_slam) by extensions ['python_setup_py']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(/home/aniketh05/ros2_ws/src/new_diffbot_slam) by extension 'python_setup_py'
+[0.724s] DEBUG:colcon.colcon_core.package_identification:Package '/home/aniketh05/ros2_ws/src/new_diffbot_slam' with type 'python' and name 'new_diffbot_slam'
+[0.725s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

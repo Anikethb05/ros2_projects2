@@ -1,2 +1,0 @@
-Invoking command in '/home/aniketh05/ros2_ws/build/my_ddrobot': /usr/bin/cmake --build /home/aniketh05/ros2_ws/build/my_ddrobot -- -j12 -l12
-Invoked command in '/home/aniketh05/ros2_ws/build/my_ddrobot' returned '2': /usr/bin/cmake --build /home/aniketh05/ros2_ws/build/my_ddrobot -- -j12 -l12

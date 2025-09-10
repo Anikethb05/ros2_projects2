@@ -1,0 +1,30 @@
+[0.009s] Invoking command in '/home/aniketh05/ros2_ws/build/my_robot': /usr/bin/cmake --build /home/aniketh05/ros2_ws/build/my_robot -- -j12 -l12
+[0.043s] Invoked command in '/home/aniketh05/ros2_ws/build/my_robot' returned '0': /usr/bin/cmake --build /home/aniketh05/ros2_ws/build/my_robot -- -j12 -l12
+[0.051s] Invoking command in '/home/aniketh05/ros2_ws/build/my_robot': /usr/bin/cmake --install /home/aniketh05/ros2_ws/build/my_robot
+[0.058s] -- Install configuration: ""
+[0.058s] -- Execute custom install script
+[0.058s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/launch/gazebo_sim.launch.py
+[0.058s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/launch/nav2.launch.py
+[0.058s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/launch/slam_rviz.launch.py
+[0.059s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/launch/teleop.launch.py
+[0.059s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/config/nav2_params.yaml
+[0.059s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/config/slam_toolbox.yaml
+[0.059s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/config/slam_view.rviz
+[0.059s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/urdf/my_robot.urdf.xacro
+[0.060s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/world/my_world.world
+[0.060s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/ament_index/resource_index/package_run_dependencies/my_robot
+[0.060s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/ament_index/resource_index/parent_prefix_path/my_robot
+[0.060s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/environment/ament_prefix_path.sh
+[0.060s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/environment/ament_prefix_path.dsv
+[0.060s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/environment/path.sh
+[0.060s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/environment/path.dsv
+[0.060s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/local_setup.bash
+[0.060s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/local_setup.sh
+[0.061s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/local_setup.zsh
+[0.061s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/local_setup.dsv
+[0.061s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/package.dsv
+[0.068s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/ament_index/resource_index/packages/my_robot
+[0.068s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/cmake/my_robotConfig.cmake
+[0.068s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/cmake/my_robotConfig-version.cmake
+[0.068s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/package.xml
+[0.069s] Invoked command in '/home/aniketh05/ros2_ws/build/my_robot' returned '0': /usr/bin/cmake --install /home/aniketh05/ros2_ws/build/my_robot

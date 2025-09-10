@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>my_robot</name>
+  <version>0.0.1</version>
+  <description>My custom robot with SLAM and Gazebo</description>
+
+  <maintainer email="aniketh@example.com">Aniketh</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>slam_toolbox</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>teleop_twist_keyboard</exec_depend>
+  <exec_depend>nav2_bringup</exec_depend>
+</package>

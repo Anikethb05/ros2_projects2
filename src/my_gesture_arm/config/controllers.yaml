@@ -33,72 +33,72 @@ diff_drive_controller:
     cmd_vel_timeout: 0.5
     publish_limited_velocity: false
 
-shoulder_yaw_joint_controller:
-  ros__parameters:
-    joints:
-      - shoulder_yaw_joint
-    command_interfaces:
-      - position
-    state_interfaces:
-      - position
-      - velocity
+# shoulder_yaw_joint_controller:
+#   ros__parameters:
+#     joints:
+#       - shoulder_yaw_joint
+#     command_interfaces:
+#       - position
+#     state_interfaces:
+#       - position
+#       - velocity
 
-shoulder_pitch_joint_controller:
-  ros__parameters:
-    joints:
-      - shoulder_pitch_joint
-    command_interfaces:
-      - position
-    state_interfaces:
-      - position
-      - velocity
+# shoulder_pitch_joint_controller:
+#   ros__parameters:
+#     joints:
+#       - shoulder_pitch_joint
+#     command_interfaces:
+#       - position
+#     state_interfaces:
+#       - position
+#       - velocity
 
-elbow_joint_controller:
-  ros__parameters:
-    joints:
-      - elbow_joint
-    command_interfaces:
-      - position
-    state_interfaces:
-      - position
-      - velocity
+# elbow_joint_controller:
+#   ros__parameters:
+#     joints:
+#       - elbow_joint
+#     command_interfaces:
+#       - position
+#     state_interfaces:
+#       - position
+#       - velocity
 
-wrist_roll_joint_controller:
-  ros__parameters:
-    joints:
-      - wrist_roll_joint
-    command_interfaces:
-      - position
-    state_interfaces:
-      - position
-      - velocity
+# wrist_roll_joint_controller:
+#   ros__parameters:
+#     joints:
+#       - wrist_roll_joint
+#     command_interfaces:
+#       - position
+#     state_interfaces:
+#       - position
+#       - velocity
 
-wrist_pitch_joint_controller:
-  ros__parameters:
-    joints:
-      - wrist_pitch_joint
-    command_interfaces:
-      - position
-    state_interfaces:
-      - position
-      - velocity
+# wrist_pitch_joint_controller:
+#   ros__parameters:
+#     joints:
+#       - wrist_pitch_joint
+#     command_interfaces:
+#       - position
+#     state_interfaces:
+#       - position
+#       - velocity
 
-left_finger_joint_controller:
-  ros__parameters:
-    joints:
-      - left_finger_joint
-    command_interfaces:
-      - position
-    state_interfaces:
-      - position
-      - velocity
+# left_finger_joint_controller:
+#   ros__parameters:
+#     joints:
+#       - left_finger_joint
+#     command_interfaces:
+#       - position
+#     state_interfaces:
+#       - position
+#       - velocity
 
-right_finger_joint_controller:
-  ros__parameters:
-    joints:
-      - right_finger_joint
-    command_interfaces:
-      - position
-    state_interfaces:
-      - position
-      - velocity
+# right_finger_joint_controller:
+#   ros__parameters:
+#     joints:
+#       - right_finger_joint
+#     command_interfaces:
+#       - position
+#     state_interfaces:
+#       - position
+#       - velocity

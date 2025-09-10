@@ -1,9 +1,0 @@
-[0.024s] Invoking command in '/home/aniketh05/ros2_ws/build/my_gesture_arm': /usr/bin/cmake --build /home/aniketh05/ros2_ws/build/my_gesture_arm -- -j12 -l12
-[0.069s] [31mCMake Error at CMakeLists.txt:1:
-[0.069s]   Parse error.  Expected a newline, got identifier with text "project".
-[0.070s] 
-[0.070s] [0m
-[0.070s] -- Configuring incomplete, errors occurred!
-[0.070s] See also "/home/aniketh05/ros2_ws/build/my_gesture_arm/CMakeFiles/CMakeOutput.log".
-[0.074s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
-[0.078s] Invoked command in '/home/aniketh05/ros2_ws/build/my_gesture_arm' returned '2': /usr/bin/cmake --build /home/aniketh05/ros2_ws/build/my_gesture_arm -- -j12 -l12

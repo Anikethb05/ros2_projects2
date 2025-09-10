@@ -1,0 +1,94 @@
+[0.012s] Invoking command in '/home/aniketh05/ros2_ws/build/navigation_tb3': CMAKE_PREFIX_PATH=/home/aniketh05/my_ros2_ws/install/turtle_control:/home/aniketh05/my_ros2_ws/install/my_services:/home/aniketh05/my_ros2_ws/install/my_pkg_prac:/home/aniketh05/my_ros2_ws/install/my_pkg_01:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/aniketh05/ros2_ws/src/navigation_tb3 -DCMAKE_INSTALL_PREFIX=/home/aniketh05/ros2_ws/install/navigation_tb3
+[0.155s] -- The C compiler identification is GNU 11.4.0
+[0.575s] -- The CXX compiler identification is GNU 11.4.0
+[1.297s] -- Detecting C compiler ABI info
+[1.448s] -- Detecting C compiler ABI info - done
+[1.452s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.453s] -- Detecting C compile features
+[1.454s] -- Detecting C compile features - done
+[1.458s] -- Detecting CXX compiler ABI info
+[1.657s] -- Detecting CXX compiler ABI info - done
+[1.661s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.661s] -- Detecting CXX compile features
+[1.662s] -- Detecting CXX compile features - done
+[1.684s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.807s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.909s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[2.267s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.280s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.296s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.316s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.338s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.393s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.398s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[2.431s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.448s] -- Looking for pthread.h
+[2.537s] -- Looking for pthread.h - found
+[2.538s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.628s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.629s] -- Found Threads: TRUE  
+[2.690s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.724s] -- Found rclpy: 3.3.16 (/opt/ros/humble/share/rclpy/cmake)
+[2.841s] -- Configuring done
+[2.850s] -- Generating done
+[2.852s] -- Build files have been written to: /home/aniketh05/ros2_ws/build/navigation_tb3
+[2.860s] Invoked command in '/home/aniketh05/ros2_ws/build/navigation_tb3' returned '0': CMAKE_PREFIX_PATH=/home/aniketh05/my_ros2_ws/install/turtle_control:/home/aniketh05/my_ros2_ws/install/my_services:/home/aniketh05/my_ros2_ws/install/my_pkg_prac:/home/aniketh05/my_ros2_ws/install/my_pkg_01:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/aniketh05/ros2_ws/src/navigation_tb3 -DCMAKE_INSTALL_PREFIX=/home/aniketh05/ros2_ws/install/navigation_tb3
+[2.860s] Invoking command in '/home/aniketh05/ros2_ws/build/navigation_tb3': CMAKE_PREFIX_PATH=/home/aniketh05/my_ros2_ws/install/turtle_control:/home/aniketh05/my_ros2_ws/install/my_services:/home/aniketh05/my_ros2_ws/install/my_pkg_prac:/home/aniketh05/my_ros2_ws/install/my_pkg_01:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/aniketh05/ros2_ws/build/navigation_tb3 -- -j12 -l12
+[2.894s] [ 50%] [32mBuilding CXX object CMakeFiles/pub_occupancy_grid.dir/src/pub_occupancy_grid.cpp.o[0m
+[2.900s] [ 50%] Built target ament_cmake_python_copy_navigation_tb3
+[3.098s] running egg_info
+[3.098s] creating navigation_tb3.egg-info
+[3.099s] writing navigation_tb3.egg-info/PKG-INFO
+[3.099s] writing dependency_links to navigation_tb3.egg-info/dependency_links.txt
+[3.099s] writing top-level names to navigation_tb3.egg-info/top_level.txt
+[3.099s] writing manifest file 'navigation_tb3.egg-info/SOURCES.txt'
+[3.102s] reading manifest file 'navigation_tb3.egg-info/SOURCES.txt'
+[3.103s] writing manifest file 'navigation_tb3.egg-info/SOURCES.txt'
+[3.123s] [ 50%] Built target ament_cmake_python_build_navigation_tb3_egg
+[6.096s] [100%] [32m[1mLinking CXX executable pub_occupancy_grid[0m
+[6.297s] [100%] Built target pub_occupancy_grid
+[6.305s] Invoked command in '/home/aniketh05/ros2_ws/build/navigation_tb3' returned '0': CMAKE_PREFIX_PATH=/home/aniketh05/my_ros2_ws/install/turtle_control:/home/aniketh05/my_ros2_ws/install/my_services:/home/aniketh05/my_ros2_ws/install/my_pkg_prac:/home/aniketh05/my_ros2_ws/install/my_pkg_01:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/aniketh05/ros2_ws/build/navigation_tb3 -- -j12 -l12
+[6.313s] Invoking command in '/home/aniketh05/ros2_ws/build/navigation_tb3': CMAKE_PREFIX_PATH=/home/aniketh05/my_ros2_ws/install/turtle_control:/home/aniketh05/my_ros2_ws/install/my_services:/home/aniketh05/my_ros2_ws/install/my_pkg_prac:/home/aniketh05/my_ros2_ws/install/my_pkg_01:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/aniketh05/ros2_ws/build/navigation_tb3
+[6.318s] -- Install configuration: ""
+[6.318s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/lib/navigation_tb3/pub_occupancy_grid
+[6.319s] -- Set runtime path of "/home/aniketh05/ros2_ws/install/navigation_tb3/lib/navigation_tb3/pub_occupancy_grid" to ""
+[6.319s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/navigation_tb3/launch
+[6.319s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/navigation_tb3/launch/mapping.launch.py
+[6.320s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/navigation_tb3/launch/navigation.launch.py
+[6.320s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/navigation_tb3/config
+[6.320s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/navigation_tb3/config/tb3_map.yaml
+[6.321s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/navigation_tb3/config/turtlebot3_lds_2d.lua
+[6.321s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/navigation_tb3/config/tb3_map.pgm:Zone.Identifier
+[6.321s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/navigation_tb3/config/mapping.rviz
+[6.321s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/navigation_tb3/config/tb3_map.pgm
+[6.322s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/navigation_tb3/config/tb3_nav2_params.yaml
+[6.322s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/navigation_tb3/config/navigation.rviz
+[6.322s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/navigation_tb3/environment/pythonpath.sh
+[6.322s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/navigation_tb3/environment/pythonpath.dsv
+[6.322s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/local/lib/python3.10/dist-packages/navigation_tb3-0.0.0-py3.10.egg-info
+[6.323s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/local/lib/python3.10/dist-packages/navigation_tb3-0.0.0-py3.10.egg-info/SOURCES.txt
+[6.323s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/local/lib/python3.10/dist-packages/navigation_tb3-0.0.0-py3.10.egg-info/top_level.txt
+[6.323s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/local/lib/python3.10/dist-packages/navigation_tb3-0.0.0-py3.10.egg-info/PKG-INFO
+[6.323s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/local/lib/python3.10/dist-packages/navigation_tb3-0.0.0-py3.10.egg-info/dependency_links.txt
+[6.323s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/local/lib/python3.10/dist-packages/navigation_tb3
+[6.323s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/local/lib/python3.10/dist-packages/navigation_tb3/__init__.py
+[6.352s] Listing '/home/aniketh05/ros2_ws/install/navigation_tb3/local/lib/python3.10/dist-packages/navigation_tb3'...
+[6.352s] Compiling '/home/aniketh05/ros2_ws/install/navigation_tb3/local/lib/python3.10/dist-packages/navigation_tb3/__init__.py'...
+[6.355s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/lib/navigation_tb3/single_goal_nav.py
+[6.356s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/lib/navigation_tb3/multi_waypoints.py
+[6.356s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/ament_index/resource_index/package_run_dependencies/navigation_tb3
+[6.357s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/ament_index/resource_index/parent_prefix_path/navigation_tb3
+[6.357s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/navigation_tb3/environment/ament_prefix_path.sh
+[6.357s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/navigation_tb3/environment/ament_prefix_path.dsv
+[6.357s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/navigation_tb3/environment/path.sh
+[6.357s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/navigation_tb3/environment/path.dsv
+[6.357s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/navigation_tb3/local_setup.bash
+[6.357s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/navigation_tb3/local_setup.sh
+[6.357s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/navigation_tb3/local_setup.zsh
+[6.357s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/navigation_tb3/local_setup.dsv
+[6.357s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/navigation_tb3/package.dsv
+[6.358s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/ament_index/resource_index/packages/navigation_tb3
+[6.358s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/navigation_tb3/cmake/navigation_tb3Config.cmake
+[6.358s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/navigation_tb3/cmake/navigation_tb3Config-version.cmake
+[6.359s] -- Installing: /home/aniketh05/ros2_ws/install/navigation_tb3/share/navigation_tb3/package.xml
+[6.360s] Invoked command in '/home/aniketh05/ros2_ws/build/navigation_tb3' returned '0': CMAKE_PREFIX_PATH=/home/aniketh05/my_ros2_ws/install/turtle_control:/home/aniketh05/my_ros2_ws/install/my_services:/home/aniketh05/my_ros2_ws/install/my_pkg_prac:/home/aniketh05/my_ros2_ws/install/my_pkg_01:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/aniketh05/ros2_ws/build/navigation_tb3

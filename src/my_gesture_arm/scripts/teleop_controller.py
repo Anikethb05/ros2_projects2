@@ -311,7 +311,7 @@ class TeleopController(Node):
             twist = Twist()
             self.cmd_vel_pub.publish(twist)
             # Return arm to home
-            self.move_arm_to_position(self.home_position)
+            #self.move_arm_to_position(self.home_position)
             if self.settings:
                 termios.tcsetattr(sys.stdin, termios.TCSADRAIN, self.settings)
 

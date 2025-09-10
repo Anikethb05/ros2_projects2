@@ -1,0 +1,33 @@
+[0.046s] Invoking command in '/home/aniketh05/ros2_ws/build/kimera_multi': /usr/bin/cmake /home/aniketh05/ros2_ws/src/Kimera-Multi -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/aniketh05/ros2_ws/install/kimera_multi
+[0.358s] -- The C compiler identification is GNU 11.4.0
+[0.741s] -- The CXX compiler identification is GNU 11.4.0
+[1.312s] -- Detecting C compiler ABI info
+[1.493s] -- Detecting C compiler ABI info - done
+[1.498s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.498s] -- Detecting C compile features
+[1.499s] -- Detecting C compile features - done
+[1.501s] -- Detecting CXX compiler ABI info
+[1.697s] -- Detecting CXX compiler ABI info - done
+[1.705s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.705s] -- Detecting CXX compile features
+[1.706s] -- Detecting CXX compile features - done
+[3.412s] [31mCMake Error at CMakeLists.txt:6 (find_package):
+[3.412s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[3.412s]   asked CMake to find a package configuration file provided by "catkin", but
+[3.412s]   CMake did not find one.
+[3.412s] 
+[3.412s]   Could not find a package configuration file provided by "catkin" with any
+[3.412s]   of the following names:
+[3.412s] 
+[3.412s]     catkinConfig.cmake
+[3.412s]     catkin-config.cmake
+[3.412s] 
+[3.412s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[3.412s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[3.412s]   provides a separate development package or SDK, be sure it has been
+[3.412s]   installed.
+[3.412s] 
+[3.413s] [0m
+[3.413s] -- Configuring incomplete, errors occurred!
+[3.413s] See also "/home/aniketh05/ros2_ws/build/kimera_multi/CMakeFiles/CMakeOutput.log".
+[3.414s] Invoked command in '/home/aniketh05/ros2_ws/build/kimera_multi' returned '1': /usr/bin/cmake /home/aniketh05/ros2_ws/src/Kimera-Multi -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/aniketh05/ros2_ws/install/kimera_multi

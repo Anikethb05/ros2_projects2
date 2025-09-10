@@ -1,204 +1,236 @@
 <?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="my_dd_robot">
 
+    <!-- XACRO Properties -->
+    <xacro:property name="x_dim" value="0.6"/>
+    <xacro:property name="y_dim" value="0.4"/>
+    <xacro:property name="z_dim" value="0.2"/>
+    <xacro:property name="robotname" value="my_dd"/>
+    <xacro:property name="wheel_radius" value="0.1"/>
+    <xacro:property name="wheel_thickness" value="0.05"/>
+    <xacro:property name="wheel_mass" value="0.2"/>
 
-<robot xmlns:xacro = "http://www.ros.org/wiki/xacro" name="my_dd_robot">
-
-
-
-
-<xacro:property name="x_dim" value="0.6"/>
-<xacro:property name="y_dim" value="0.4"/>
-<xacro:property name="z_dim" value="0.2"/>
-<xacro:property name="robotname" value="my_dd"/>
-<xacro:property name= "wheel_radius" value = "0.1"/>
-<xacro:property name= "wheel_thickness" value = "0.05"/>
-<xacro:property name= "wheel_mass" value = "0.15"/>
-
-<xacro:macro name="inertial" params="mass">
+    <!-- XACRO Macro for Inertial Properties -->
+    <xacro:macro name="inertial" params="mass">
         <inertial>
             <mass value="${mass}"/>
-            <inertia ixx="1e-3" ixy = "0.0" ixz="0.0" iyy="1e-3" iyz="0.0" izz="1e-3"/>
-            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/> 
+            <inertia ixx="1e-3" ixy="0.0" ixz="0.0" iyy="1e-3" iyz="0.0" izz="1e-3"/>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
         </inertial>
-</xacro:macro>
+    </xacro:macro>
 
-<!--must be included only after defining xacro properties and macros-->
-<xacro:include filename="$(find my_ddrobot)/model/my_dd_robot.gazebo"/>
+    <!-- Include Gazebo Plugins -->
+    <xacro:include filename="$(find my_ddrobot)/model/my_dd_robot.gazebo"/>
 
-
+    <!-- Materials -->
     <material name="grey">
-        <color rgba="0.7 0.7 0.7 1" />
+        <color rgba="0.7 0.7 fadeToBlack0.7 1"/>
     </material>
-
     <material name="green">
-        <color rgba="0 0.6 0 1" />
+        <color rgba="0 0.6 0 1"/>
     </material>
-    
     <material name="white">
         <color rgba="1 1 1 1"/>
     </material>
-
     <material name="yellow">
         <color rgba="1 1 0 1"/>
     </material>
 
-<!-- Base Footprint -->
+    <!-- Base Footprint -->
     <link name="base_footprint"/>
 
-<!-- Base link ; Body of the robot -->
+    <!-- Base Link (Body of the Robot) -->
     <link name="base_link">
         <visual>
             <geometry>
-                <box size="${x_dim} ${y_dim} ${z_dim}" />
+                <box size="${x_dim} ${y_dim} ${z_dim}"/>
             </geometry>
-            <origin xyz="0 0 0.1" rpy="0 0 0" />
-            <material name="green" />
+            <origin xyz="0 0 0.1" rpy="0 0 0"/>
+            <material name="green"/>
         </visual>
-
-<!-- Collision Geometry-->
-    <collision>
-        <geometry>
-            <box size="${x_dim} ${y_dim} ${z_dim}" />
-        </geometry>
-    </collision>
-
-<!-- Inertial Properties-->
-    <xacro:inertial mass="2"/>
+        <collision>
+            <geometry>
+                <box size="${x_dim} ${y_dim} ${z_dim}"/>
+            </geometry>
+            <origin xyz="0 0 0.1" rpy="0 0 0"/>
+        </collision>
+        <xacro:inertial mass="2"/>
     </link>
-    
 
+    <!-- Left Wheel -->
     <link name="left_wheel">
         <visual>
             <geometry>
                 <cylinder radius="${wheel_radius}" length="${wheel_thickness}"/>
             </geometry>
-            <origin xyz="0 0 0" rpy="1.57 0 0" />
-            <material name="grey" />
+            <origin xyz="0 0 0" rpy="1.57 0 0"/>
+            <material name="grey"/>
         </visual>
         <collision>
             <geometry>
                 <cylinder radius="${wheel_radius}" length="${wheel_thickness}"/>
             </geometry>
+            <origin xyz="0 0 0" rpy="1.57 0 0"/>
         </collision>
-
         <xacro:inertial mass="${wheel_mass}"/>
     </link>
 
+    <!-- Right Wheel -->
     <link name="right_wheel">
         <visual>
             <geometry>
                 <cylinder radius="${wheel_radius}" length="${wheel_thickness}"/>
             </geometry>
-            <origin xyz="0 0 0" rpy="1.57 0 0" />
-            <material name="grey" />
+            <origin xyz="0 0 0" rpy="1.57 0 0"/>
+            <material name="grey"/>
         </visual>
-
         <collision>
             <geometry>
                 <cylinder radius="${wheel_radius}" length="${wheel_thickness}"/>
             </geometry>
+            <origin xyz="0 0 0" rpy="1.57 0 0"/>
         </collision>
-
-     <xacro:inertial mass="${wheel_mass}"/>
-
+        <xacro:inertial mass="${wheel_mass}"/>
     </link>
 
+    <!-- Caster Wheel -->
     <link name="caster_wheel">
         <visual>
             <geometry>
                 <sphere radius="0.05"/>
             </geometry>
-            <origin xyz="0 0 0" rpy="0 0 0" />
-            <material name="grey" />
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <material name="grey"/>
         </visual>
+        <collision>
+            <geometry>
+                <sphere radius="0.05"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </collision>
+        <xacro:inertial mass="${wheel_mass}"/>
+    </link>
 
+    <!-- Camera Link -->
+    <link name="camera_link">
+        <visual>
+            <geometry>
+                <box size="0.05 0.05 0.05"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <material name="yellow"/>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="0.05 0.05 0.05"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </collision>
+        <xacro:inertial mass="0.2"/>
+    </link>
+
+    <!-- Camera Optical Link (Added for camera functionality) -->
+    <link name="camera_link_optical">
         <inertial>
-            <mass value="${wheel_mass}"/>
-            <inertia ixx="1e-3" ixy = "0.0" ixz="0.0" iyy="1e-3" iyz="0.0" izz="1e-3"/>
+            <mass value="0.001"/>
+            <inertia ixx="1e-6" ixy="0.0" ixz="0.0" iyy="1e-6" iyz="0.0" izz="1e-6"/>
         </inertial>
     </link>
 
-
-<!-- +++++++++++++++ Camera Link  ++++++++++++++++++-->
-    <link name="camera_link">
+    <!-- LIDAR Link -->
+    <link name="lidar_link">
         <visual>
-             <geometry>
-                <box size="0.05 0.05 0.05"/>
+            <geometry>
+                <cylinder radius="0.05" length="0.02"/>
             </geometry>
-                <origin xyz="0 0 0" rpy="0 0 0" />
-            <material name="yellow" />
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <material name="white"/>
         </visual>
-<!-- Collision Geometry-->
-    <collision>
-        <geometry>
-            <box size="0.05 0.05 0.05" />
-        </geometry>
-    </collision>
-
-<!-- Inertial Properties-->
-    <xacro:inertial mass="0.2"/>
+        <collision>
+            <geometry>
+                <cylinder radius="0.05" length="0.02"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </collision>
+        <xacro:inertial mass="0.1"/>
     </link>
 
+    <!-- IMU Link -->
+    <link name="imu_link">
+        <visual>
+            <geometry>
+                <box size="0.03 0.03 0.02"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <material name="white"/>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="0.03 0.03 0.02"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </collision>
+        <xacro:inertial mass="0.05"/>
+    </link>
 
-<!-- Body to Base Joint-->
+    <!-- Body to Base Joint -->
     <joint name="base_joint" type="fixed">
         <parent link="base_footprint"/>
         <child link="base_link"/>
         <origin xyz="0 0 0.1" rpy="0 0 0"/>
     </joint>
-<!--___________________________________________________________-->
 
-
-<!--Left wheel to Body Joint-->
+    <!-- Left Wheel to Body Joint -->
     <joint name="base_left_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="left_wheel"/>
         <origin xyz="-0.15 0.225 0" rpy="0 0 0"/>
         <axis xyz="0 1 0"/>
-<!--Wheel Dynamics -->
-        <dynamics damping = "1.0" friction ="0.4"/>
+        <dynamics damping="1.0" friction="0.4"/>
     </joint>
-<!--___________________________________________________________-->
 
-
-<!--Left wheel to Body Joint-->
+    <!-- Right Wheel to Body Joint -->
     <joint name="base_right_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="right_wheel"/>
         <origin xyz="-0.15 -0.225 0" rpy="0 0 0"/>
         <axis xyz="0 1 0"/>
-<!--Wheel Dynamics -->
-        <dynamics damping = "1.0" friction ="0.4"/>
+        <dynamics damping="1.0" friction="0.4"/>
     </joint>
-<!--___________________________________________________________-->
 
-
-<!--Caster Wheel to Body Joint-->
+    <!-- Caster Wheel to Body Joint -->
     <joint name="base_caster_wheel_joint" type="fixed">
         <parent link="base_link"/>
         <child link="caster_wheel"/>
         <origin xyz="0.2 0 -0.05" rpy="0 0 0"/>
     </joint>
-<!--___________________________________________________________-->
 
-
-<!--Camera to Body Joint -->
-      <joint name="base_camera_joint" type="fixed">
+    <!-- Camera to Body Joint -->
+    <joint name="base_camera_joint" type="fixed">
         <parent link="base_link"/>
         <child link="camera_link"/>
-        <origin xyz="${x_dim/2 - 0.05/2} 0 ${z_dim+ (0.05/2)}" rpy="0 0 0"/>
-    </joint> 
-<!--___________________________________________________________-->
+        <origin xyz="${x_dim/2 - 0.05/2} 0 ${z_dim + (0.05/2)}" rpy="0 0 0"/>
+    </joint>
 
+    <!-- Camera Optical Joint (Added for camera functionality) -->
+    <joint name="camera_optical_joint" type="fixed">
+        <parent link="camera_link"/>
+        <child link="camera_link_optical"/>
+        <origin xyz="0 0 0" rpy="-1.5707963267948966 0 -1.5707963267948966"/>
+    </joint>
 
-<!-- Camera Joint 
+    <!-- LIDAR to Body Joint -->
+    <joint name="base_lidar_link_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="lidar_link"/>
+        <origin xyz="0.0 0 0.25" rpy="0 0 0"/>
+    </joint>
 
-<joint name="camera_optical_joint" type="fixed">
-    <parent link="camera_link"/>
-    <child link="child_link_optical"/>
-    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
-</joint>-->
-
-
+    <!-- IMU to Body Joint -->
+    <joint name="base_imu_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="imu_link"/>
+        <origin xyz="0.0 0 0.15" rpy="0 0 0"/>
+    </joint>
 
 </robot>

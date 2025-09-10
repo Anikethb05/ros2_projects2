@@ -1,0 +1,36 @@
+[0.873s] Invoking command in '/home/aniketh05/ros2_ws/build/new_diffbot_slam': PYTHONPATH=/home/aniketh05/ros2_ws/build/new_diffbot_slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aniketh05/ros2_ws/install/new_diffbot_slam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/aniketh05/ros2_ws/build/new_diffbot_slam/build --no-deps symlink_data
+[1.193s] running develop
+[1.234s] /home/aniketh05/.local/lib/python3.10/site-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 2.0.5-build-libtorrent-rasterbar-qrM5vM-libtorrent-rasterbar-2.0.5-bindings-python is an invalid version and will not be supported in a future release
+[1.234s]   warnings.warn(
+[1.356s] running egg_info
+[1.356s] creating new_diffbot_slam.egg-info
+[1.357s] writing new_diffbot_slam.egg-info/PKG-INFO
+[1.357s] writing dependency_links to new_diffbot_slam.egg-info/dependency_links.txt
+[1.357s] writing entry points to new_diffbot_slam.egg-info/entry_points.txt
+[1.358s] writing requirements to new_diffbot_slam.egg-info/requires.txt
+[1.358s] writing top-level names to new_diffbot_slam.egg-info/top_level.txt
+[1.358s] writing manifest file 'new_diffbot_slam.egg-info/SOURCES.txt'
+[1.360s] reading manifest file 'new_diffbot_slam.egg-info/SOURCES.txt'
+[1.361s] writing manifest file 'new_diffbot_slam.egg-info/SOURCES.txt'
+[1.363s] running build_ext
+[1.363s] Creating /home/aniketh05/ros2_ws/install/new_diffbot_slam/lib/python3.10/site-packages/new-diffbot-slam.egg-link (link to .)
+[1.363s] Installing obstacle_avoidance script to /home/aniketh05/ros2_ws/install/new_diffbot_slam/lib/new_diffbot_slam
+[1.364s] 
+[1.364s] Installed /home/aniketh05/ros2_ws/build/new_diffbot_slam
+[1.365s] running symlink_data
+[1.365s] creating /home/aniketh05/ros2_ws/install/new_diffbot_slam/share
+[1.365s] creating /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/ament_index
+[1.365s] creating /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/ament_index/resource_index
+[1.366s] creating /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/ament_index/resource_index/packages
+[1.366s] symbolically linking /home/aniketh05/ros2_ws/build/new_diffbot_slam/resource/new_diffbot_slam -> /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/ament_index/resource_index/packages
+[1.366s] creating /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/new_diffbot_slam
+[1.366s] symbolically linking /home/aniketh05/ros2_ws/build/new_diffbot_slam/package.xml -> /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/new_diffbot_slam
+[1.366s] creating /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/new_diffbot_slam/launch
+[1.366s] symbolically linking /home/aniketh05/ros2_ws/build/new_diffbot_slam/launch/sim.launch.py -> /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/new_diffbot_slam/launch
+[1.367s] creating /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/new_diffbot_slam/urdf
+[1.367s] symbolically linking /home/aniketh05/ros2_ws/build/new_diffbot_slam/urdf/diffbot.urdf.xacro -> /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/new_diffbot_slam/urdf
+[1.367s] creating /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/new_diffbot_slam/worlds
+[1.367s] symbolically linking /home/aniketh05/ros2_ws/build/new_diffbot_slam/worlds/world.world -> /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/new_diffbot_slam/worlds
+[1.367s] creating /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/new_diffbot_slam/rviz
+[1.367s] symbolically linking /home/aniketh05/ros2_ws/build/new_diffbot_slam/rviz/slam.rviz -> /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/new_diffbot_slam/rviz
+[1.413s] Invoked command in '/home/aniketh05/ros2_ws/build/new_diffbot_slam' returned '0': PYTHONPATH=/home/aniketh05/ros2_ws/build/new_diffbot_slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aniketh05/ros2_ws/install/new_diffbot_slam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/aniketh05/ros2_ws/build/new_diffbot_slam/build --no-deps symlink_data

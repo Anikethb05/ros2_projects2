@@ -1,0 +1,6 @@
+[0.000000] (-) TimerEvent: {}
+[0.000146] (-) JobUnselected: {'identifier': 'kimera_multi'}
+[0.000165] (-) JobUnselected: {'identifier': 'my_ddrobot'}
+[0.000175] (-) JobUnselected: {'identifier': 'my_gesture_arm'}
+[0.000183] (-) JobUnselected: {'identifier': 'navigation_tb3'}
+[0.000900] (-) EventReactorShutdown: {}

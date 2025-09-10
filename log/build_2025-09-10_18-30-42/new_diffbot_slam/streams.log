@@ -1,0 +1,41 @@
+[1.896s] Invoking command in '/home/aniketh05/ros2_ws/build/new_diffbot_slam': PYTHONPATH=/home/aniketh05/ros2_ws/build/new_diffbot_slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aniketh05/ros2_ws/install/new_diffbot_slam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/aniketh05/ros2_ws/build/new_diffbot_slam/build
+[2.560s] running develop
+[2.660s] /home/aniketh05/.local/lib/python3.10/site-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 2.0.5-build-libtorrent-rasterbar-qrM5vM-libtorrent-rasterbar-2.0.5-bindings-python is an invalid version and will not be supported in a future release
+[2.660s]   warnings.warn(
+[2.927s] Removing /home/aniketh05/ros2_ws/install/new_diffbot_slam/lib/python3.10/site-packages/new-diffbot-slam.egg-link (link to .)
+[2.976s] Invoked command in '/home/aniketh05/ros2_ws/build/new_diffbot_slam' returned '0': PYTHONPATH=/home/aniketh05/ros2_ws/build/new_diffbot_slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aniketh05/ros2_ws/install/new_diffbot_slam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/aniketh05/ros2_ws/build/new_diffbot_slam/build
+[2.980s] Invoking command in '/home/aniketh05/ros2_ws/src/new_diffbot_slam': PYTHONPATH=/home/aniketh05/ros2_ws/build/new_diffbot_slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aniketh05/ros2_ws/install/new_diffbot_slam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/new_diffbot_slam build --build-base /home/aniketh05/ros2_ws/build/new_diffbot_slam/build install --record /home/aniketh05/ros2_ws/build/new_diffbot_slam/install.log --single-version-externally-managed install_data --force
+[3.559s] running egg_info
+[3.561s] writing ../../build/new_diffbot_slam/new_diffbot_slam.egg-info/PKG-INFO
+[3.564s] writing dependency_links to ../../build/new_diffbot_slam/new_diffbot_slam.egg-info/dependency_links.txt
+[3.564s] writing entry points to ../../build/new_diffbot_slam/new_diffbot_slam.egg-info/entry_points.txt
+[3.564s] writing requirements to ../../build/new_diffbot_slam/new_diffbot_slam.egg-info/requires.txt
+[3.565s] writing top-level names to ../../build/new_diffbot_slam/new_diffbot_slam.egg-info/top_level.txt
+[3.570s] reading manifest file '../../build/new_diffbot_slam/new_diffbot_slam.egg-info/SOURCES.txt'
+[3.573s] writing manifest file '../../build/new_diffbot_slam/new_diffbot_slam.egg-info/SOURCES.txt'
+[3.574s] running build
+[3.575s] running build_py
+[3.576s] creating /home/aniketh05/ros2_ws/build/new_diffbot_slam/build
+[3.576s] creating /home/aniketh05/ros2_ws/build/new_diffbot_slam/build/lib
+[3.576s] creating /home/aniketh05/ros2_ws/build/new_diffbot_slam/build/lib/new_diffbot_slam
+[3.577s] copying new_diffbot_slam/__init__.py -> /home/aniketh05/ros2_ws/build/new_diffbot_slam/build/lib/new_diffbot_slam
+[3.577s] copying new_diffbot_slam/obstacle_avoidance.py -> /home/aniketh05/ros2_ws/build/new_diffbot_slam/build/lib/new_diffbot_slam
+[3.577s] running install
+[3.578s] running install_lib
+[3.579s] creating /home/aniketh05/ros2_ws/install/new_diffbot_slam/lib/python3.10/site-packages/new_diffbot_slam
+[3.580s] copying /home/aniketh05/ros2_ws/build/new_diffbot_slam/build/lib/new_diffbot_slam/__init__.py -> /home/aniketh05/ros2_ws/install/new_diffbot_slam/lib/python3.10/site-packages/new_diffbot_slam
+[3.580s] copying /home/aniketh05/ros2_ws/build/new_diffbot_slam/build/lib/new_diffbot_slam/obstacle_avoidance.py -> /home/aniketh05/ros2_ws/install/new_diffbot_slam/lib/python3.10/site-packages/new_diffbot_slam
+[3.581s] byte-compiling /home/aniketh05/ros2_ws/install/new_diffbot_slam/lib/python3.10/site-packages/new_diffbot_slam/__init__.py to __init__.cpython-310.pyc
+[3.582s] byte-compiling /home/aniketh05/ros2_ws/install/new_diffbot_slam/lib/python3.10/site-packages/new_diffbot_slam/obstacle_avoidance.py to obstacle_avoidance.cpython-310.pyc
+[3.583s] running install_data
+[3.585s] copying resource/new_diffbot_slam -> /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/ament_index/resource_index/packages
+[3.588s] copying package.xml -> /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/new_diffbot_slam
+[3.588s] copying launch/sim.launch.py -> /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/new_diffbot_slam/launch
+[3.591s] copying urdf/diffbot.urdf.xacro -> /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/new_diffbot_slam/urdf
+[3.593s] copying worlds/world.world -> /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/new_diffbot_slam/worlds
+[3.595s] copying rviz/slam.rviz -> /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/new_diffbot_slam/rviz
+[3.597s] running install_egg_info
+[3.600s] Copying ../../build/new_diffbot_slam/new_diffbot_slam.egg-info to /home/aniketh05/ros2_ws/install/new_diffbot_slam/lib/python3.10/site-packages/new_diffbot_slam-0.0.0-py3.10.egg-info
+[3.602s] running install_scripts
+[3.634s] Installing obstacle_avoidance script to /home/aniketh05/ros2_ws/install/new_diffbot_slam/lib/new_diffbot_slam
+[3.635s] writing list of installed files to '/home/aniketh05/ros2_ws/build/new_diffbot_slam/install.log'

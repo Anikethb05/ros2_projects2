@@ -24,7 +24,7 @@
         </visual>
     </link>
     
-    <link name="lidar">
+    <!-- <link name="lidar">
     	<visual>
     	    <geometry>
     	        <cylinder radius="0.1" length="0.05"/>
@@ -32,7 +32,7 @@
     	    <origin xyz="0 0 0" rpy="0 0 0" />
     	    <material name="white" />
     	</visual>
-    </link>
+    </link> -->
 
     <link name="left_wheel">
         <visual>
@@ -64,17 +64,66 @@
         </visual>
     </link>
 
+    <link name="camera_link">
+    <visual>
+        <geometry>
+            <box size="0.05 0.05 0.05"/>
+        </geometry>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <material name="white"/>
+    </visual>
+</link>
+
+<joint name="base_camera_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="camera_link"/>
+    <origin xyz="0.15 0 0.2" rpy="0 0 0"/>
+</joint>
+
+<link name="lidar_link">
+    <visual>
+        <geometry>
+            <cylinder radius="0.05" length="0.02"/>
+        </geometry>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <material name="white"/>
+    </visual>
+</link>
+
+<joint name="base_lidar_link_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="lidar_link"/>
+    <origin xyz="0.0 0 0.25" rpy="0 0 0"/>
+</joint>
+
+<link name="imu_link">
+    <visual>
+        <geometry>
+            <box size="0.03 0.03 0.02"/>
+        </geometry>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <material name="white"/>
+    </visual>
+</link>
+
+<joint name="base_imu_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="imu_link"/>
+    <origin xyz="0.0 0 0.15" rpy="0 0 0"/>
+</joint>
+
+
     <joint name="base_joint" type="fixed">
         <parent link="base_footprint"/>
         <child link="base_link"/>
         <origin xyz="0 0 0.1" rpy="0 0 0"/>
     </joint>
 
-    <joint name="base_lidar_joint" type="fixed">
+    <!-- <joint name="base_lidar_joint" type="fixed">
         <parent link="base_link"/>
         <child link="lidar"/>
         <origin xyz="0 0 0.225" rpy="0 0 0"/>
-    </joint>
+    </joint> -->
 
     <joint name="base_left_wheel_joint" type="continuous">
         <parent link="base_link"/>
@@ -95,5 +144,7 @@
         <child link="caster_wheel"/>
         <origin xyz="0.2 0 -0.05" rpy="0 0 0"/>
     </joint>
+
+
 
 </robot>

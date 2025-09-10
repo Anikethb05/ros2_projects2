@@ -1,0 +1,4 @@
+Invoking command in '/home/aniketh05/ros2_ws/build/my_robot': /usr/bin/cmake --build /home/aniketh05/ros2_ws/build/my_robot -- -j12 -l12
+Invoked command in '/home/aniketh05/ros2_ws/build/my_robot' returned '0': /usr/bin/cmake --build /home/aniketh05/ros2_ws/build/my_robot -- -j12 -l12
+Invoking command in '/home/aniketh05/ros2_ws/build/my_robot': /usr/bin/cmake --install /home/aniketh05/ros2_ws/build/my_robot
+Invoked command in '/home/aniketh05/ros2_ws/build/my_robot' returned '0': /usr/bin/cmake --install /home/aniketh05/ros2_ws/build/my_robot

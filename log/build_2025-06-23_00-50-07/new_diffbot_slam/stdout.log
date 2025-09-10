@@ -1,0 +1,32 @@
+running develop
+running egg_info
+creating new_diffbot_slam.egg-info
+writing new_diffbot_slam.egg-info/PKG-INFO
+writing dependency_links to new_diffbot_slam.egg-info/dependency_links.txt
+writing entry points to new_diffbot_slam.egg-info/entry_points.txt
+writing requirements to new_diffbot_slam.egg-info/requires.txt
+writing top-level names to new_diffbot_slam.egg-info/top_level.txt
+writing manifest file 'new_diffbot_slam.egg-info/SOURCES.txt'
+reading manifest file 'new_diffbot_slam.egg-info/SOURCES.txt'
+writing manifest file 'new_diffbot_slam.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/aniketh05/ros2_ws/install/new_diffbot_slam/lib/python3.10/site-packages/new-diffbot-slam.egg-link (link to .)
+Installing obstacle_avoidance script to /home/aniketh05/ros2_ws/install/new_diffbot_slam/lib/new_diffbot_slam
+
+Installed /home/aniketh05/ros2_ws/build/new_diffbot_slam
+running symlink_data
+creating /home/aniketh05/ros2_ws/install/new_diffbot_slam/share
+creating /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/ament_index
+creating /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/ament_index/resource_index
+creating /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/ament_index/resource_index/packages
+symbolically linking /home/aniketh05/ros2_ws/build/new_diffbot_slam/resource/new_diffbot_slam -> /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/ament_index/resource_index/packages
+creating /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/new_diffbot_slam
+symbolically linking /home/aniketh05/ros2_ws/build/new_diffbot_slam/package.xml -> /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/new_diffbot_slam
+creating /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/new_diffbot_slam/launch
+symbolically linking /home/aniketh05/ros2_ws/build/new_diffbot_slam/launch/sim.launch.py -> /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/new_diffbot_slam/launch
+creating /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/new_diffbot_slam/urdf
+symbolically linking /home/aniketh05/ros2_ws/build/new_diffbot_slam/urdf/diffbot.urdf.xacro -> /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/new_diffbot_slam/urdf
+creating /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/new_diffbot_slam/worlds
+symbolically linking /home/aniketh05/ros2_ws/build/new_diffbot_slam/worlds/world.world -> /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/new_diffbot_slam/worlds
+creating /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/new_diffbot_slam/rviz
+symbolically linking /home/aniketh05/ros2_ws/build/new_diffbot_slam/rviz/slam.rviz -> /home/aniketh05/ros2_ws/install/new_diffbot_slam/share/new_diffbot_slam/rviz

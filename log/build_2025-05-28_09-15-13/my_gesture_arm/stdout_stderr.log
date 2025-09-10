@@ -1,7 +1,0 @@
-[31mCMake Error at CMakeLists.txt:1:
-  Parse error.  Expected a newline, got identifier with text "project".
-
-[0m
--- Configuring incomplete, errors occurred!
-See also "/home/aniketh05/ros2_ws/build/my_gesture_arm/CMakeFiles/CMakeOutput.log".
-gmake: *** [Makefile:226: cmake_check_build_system] Error 1

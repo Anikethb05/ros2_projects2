@@ -1,0 +1,6 @@
+source;share/new_diffbot_slam/hook/pythonpath.ps1
+source;share/new_diffbot_slam/hook/pythonpath.dsv
+source;share/new_diffbot_slam/hook/pythonpath.sh
+source;../../build/new_diffbot_slam/share/new_diffbot_slam/hook/pythonpath_develop.ps1
+source;../../build/new_diffbot_slam/share/new_diffbot_slam/hook/pythonpath_develop.dsv
+source;../../build/new_diffbot_slam/share/new_diffbot_slam/hook/pythonpath_develop.sh

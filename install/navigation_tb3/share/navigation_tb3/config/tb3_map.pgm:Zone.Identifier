@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://github.com/noshluk2/ros2_learners/blob/main/navigation_tb3/config/tb3_map.pgm
+HostUrl=https://raw.githubusercontent.com/noshluk2/ros2_learners/refs/heads/main/navigation_tb3/config/tb3_map.pgm

@@ -1,0 +1,2 @@
+Invoking command in '/home/aniketh05/ros2_ws/build/kimera_multi': /usr/bin/cmake /home/aniketh05/ros2_ws/src/Kimera-Multi -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/aniketh05/ros2_ws/install/kimera_multi
+Invoked command in '/home/aniketh05/ros2_ws/build/kimera_multi' returned '1': /usr/bin/cmake /home/aniketh05/ros2_ws/src/Kimera-Multi -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/aniketh05/ros2_ws/install/kimera_multi

@@ -1,0 +1,39 @@
+[0.016s] Invoking command in '/home/aniketh05/ros2_ws/build/my_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aniketh05/my_ros2_ws/install/turtle_control:/home/aniketh05/my_ros2_ws/install/my_services:/home/aniketh05/my_ros2_ws/install/my_pkg_prac:/home/aniketh05/my_ros2_ws/install/my_pkg_01:/opt/ros/humble /usr/bin/cmake --build /home/aniketh05/ros2_ws/build/my_robot -- -j12 -l12
+[0.078s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.192s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.222s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.282s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.282s] -- Added test 'lint_cmake' to check CMake code style
+[0.283s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.284s] -- Added test 'xmllint' to check XML markup files
+[0.286s] -- Configuring done
+[0.291s] -- Generating done
+[0.293s] -- Build files have been written to: /home/aniketh05/ros2_ws/build/my_robot
+[0.312s] Invoked command in '/home/aniketh05/ros2_ws/build/my_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aniketh05/my_ros2_ws/install/turtle_control:/home/aniketh05/my_ros2_ws/install/my_services:/home/aniketh05/my_ros2_ws/install/my_pkg_prac:/home/aniketh05/my_ros2_ws/install/my_pkg_01:/opt/ros/humble /usr/bin/cmake --build /home/aniketh05/ros2_ws/build/my_robot -- -j12 -l12
+[0.319s] Invoking command in '/home/aniketh05/ros2_ws/build/my_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aniketh05/my_ros2_ws/install/turtle_control:/home/aniketh05/my_ros2_ws/install/my_services:/home/aniketh05/my_ros2_ws/install/my_pkg_prac:/home/aniketh05/my_ros2_ws/install/my_pkg_01:/opt/ros/humble /usr/bin/cmake --install /home/aniketh05/ros2_ws/build/my_robot
+[0.323s] -- Install configuration: ""
+[0.323s] -- Execute custom install script
+[0.323s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/launch/gazebo_sim.launch.py
+[0.329s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/launch/nav2.launch.py
+[0.335s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/launch/slam.launch.py
+[0.340s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/config/nav2_params.yaml
+[0.346s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/config/slam_toolbox.yaml
+[0.352s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/config/slam_view.rviz
+[0.357s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/urdf/my_robot.urdf.xacro
+[0.363s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/world/my_world.world
+[0.369s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/ament_index/resource_index/package_run_dependencies/my_robot
+[0.369s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/ament_index/resource_index/parent_prefix_path/my_robot
+[0.369s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/environment/ament_prefix_path.sh
+[0.369s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/environment/ament_prefix_path.dsv
+[0.369s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/environment/path.sh
+[0.369s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/environment/path.dsv
+[0.370s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/local_setup.bash
+[0.370s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/local_setup.sh
+[0.370s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/local_setup.zsh
+[0.370s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/local_setup.dsv
+[0.370s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/package.dsv
+[0.376s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/ament_index/resource_index/packages/my_robot
+[0.376s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/cmake/my_robotConfig.cmake
+[0.376s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/cmake/my_robotConfig-version.cmake
+[0.376s] -- Up-to-date symlink: /home/aniketh05/ros2_ws/install/my_robot/share/my_robot/package.xml
+[0.378s] Invoked command in '/home/aniketh05/ros2_ws/build/my_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aniketh05/my_ros2_ws/install/turtle_control:/home/aniketh05/my_ros2_ws/install/my_services:/home/aniketh05/my_ros2_ws/install/my_pkg_prac:/home/aniketh05/my_ros2_ws/install/my_pkg_01:/opt/ros/humble /usr/bin/cmake --install /home/aniketh05/ros2_ws/build/my_robot

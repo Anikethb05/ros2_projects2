@@ -1,0 +1,3 @@
+[console_scripts]
+obstacle_avoidance = new_diffbot_slam.obstacle_avoidance:main
+

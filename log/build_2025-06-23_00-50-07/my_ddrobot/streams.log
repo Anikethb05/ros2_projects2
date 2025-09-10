@@ -1,0 +1,51 @@
+[0.045s] Invoking command in '/home/aniketh05/ros2_ws/build/my_ddrobot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aniketh05/my_ros2_ws/install/turtle_control:/home/aniketh05/my_ros2_ws/install/my_services:/home/aniketh05/my_ros2_ws/install/my_pkg_prac:/home/aniketh05/my_ros2_ws/install/my_pkg_01:/opt/ros/humble /usr/bin/cmake /home/aniketh05/ros2_ws/src/my_ddrobot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aniketh05/ros2_ws/install/my_ddrobot
+[0.352s] -- The C compiler identification is GNU 11.4.0
+[0.855s] -- The CXX compiler identification is GNU 11.4.0
+[1.366s] -- Detecting C compiler ABI info
+[1.553s] -- Detecting C compiler ABI info - done
+[1.559s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.559s] -- Detecting C compile features
+[1.560s] -- Detecting C compile features - done
+[1.562s] -- Detecting CXX compiler ABI info
+[1.744s] -- Detecting CXX compiler ABI info - done
+[1.749s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.749s] -- Detecting CXX compile features
+[1.750s] -- Detecting CXX compile features - done
+[1.753s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.897s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.959s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.987s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.075s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.075s] -- Added test 'lint_cmake' to check CMake code style
+[2.076s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.078s] -- Added test 'xmllint' to check XML markup files
+[2.080s] -- Configuring done
+[2.084s] -- Generating done
+[2.085s] -- Build files have been written to: /home/aniketh05/ros2_ws/build/my_ddrobot
+[2.089s] Invoked command in '/home/aniketh05/ros2_ws/build/my_ddrobot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aniketh05/my_ros2_ws/install/turtle_control:/home/aniketh05/my_ros2_ws/install/my_services:/home/aniketh05/my_ros2_ws/install/my_pkg_prac:/home/aniketh05/my_ros2_ws/install/my_pkg_01:/opt/ros/humble /usr/bin/cmake /home/aniketh05/ros2_ws/src/my_ddrobot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aniketh05/ros2_ws/install/my_ddrobot
+[2.091s] Invoking command in '/home/aniketh05/ros2_ws/build/my_ddrobot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aniketh05/my_ros2_ws/install/turtle_control:/home/aniketh05/my_ros2_ws/install/my_services:/home/aniketh05/my_ros2_ws/install/my_pkg_prac:/home/aniketh05/my_ros2_ws/install/my_pkg_01:/opt/ros/humble /usr/bin/cmake --build /home/aniketh05/ros2_ws/build/my_ddrobot -- -j12 -l12
+[2.124s] Invoked command in '/home/aniketh05/ros2_ws/build/my_ddrobot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aniketh05/my_ros2_ws/install/turtle_control:/home/aniketh05/my_ros2_ws/install/my_services:/home/aniketh05/my_ros2_ws/install/my_pkg_prac:/home/aniketh05/my_ros2_ws/install/my_pkg_01:/opt/ros/humble /usr/bin/cmake --build /home/aniketh05/ros2_ws/build/my_ddrobot -- -j12 -l12
+[2.127s] Invoking command in '/home/aniketh05/ros2_ws/build/my_ddrobot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aniketh05/my_ros2_ws/install/turtle_control:/home/aniketh05/my_ros2_ws/install/my_services:/home/aniketh05/my_ros2_ws/install/my_pkg_prac:/home/aniketh05/my_ros2_ws/install/my_pkg_01:/opt/ros/humble /usr/bin/cmake --install /home/aniketh05/ros2_ws/build/my_ddrobot
+[2.132s] -- Install configuration: ""
+[2.133s] -- Execute custom install script
+[2.134s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_ddrobot/share/my_ddrobot/launch/dd_robot.launch.py
+[2.141s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_ddrobot/share/my_ddrobot/model/my_dd_robot.gazebo
+[2.149s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_ddrobot/share/my_ddrobot/model/my_dd_robot_model.xacro
+[2.157s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_ddrobot/share/my_ddrobot/model/my_robot.urdf
+[2.164s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_ddrobot/share/my_ddrobot/model/robot_box.urdf
+[2.171s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_ddrobot/share/ament_index/resource_index/package_run_dependencies/my_ddrobot
+[2.178s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_ddrobot/share/ament_index/resource_index/parent_prefix_path/my_ddrobot
+[2.186s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_ddrobot/share/my_ddrobot/environment/ament_prefix_path.sh
+[2.193s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_ddrobot/share/my_ddrobot/environment/ament_prefix_path.dsv
+[2.201s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_ddrobot/share/my_ddrobot/environment/path.sh
+[2.208s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_ddrobot/share/my_ddrobot/environment/path.dsv
+[2.215s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_ddrobot/share/my_ddrobot/local_setup.bash
+[2.222s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_ddrobot/share/my_ddrobot/local_setup.sh
+[2.228s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_ddrobot/share/my_ddrobot/local_setup.zsh
+[2.236s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_ddrobot/share/my_ddrobot/local_setup.dsv
+[2.243s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_ddrobot/share/my_ddrobot/package.dsv
+[2.252s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_ddrobot/share/ament_index/resource_index/packages/my_ddrobot
+[2.262s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_ddrobot/share/my_ddrobot/cmake/my_ddrobotConfig.cmake
+[2.270s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_ddrobot/share/my_ddrobot/cmake/my_ddrobotConfig-version.cmake
+[2.278s] -- Symlinking: /home/aniketh05/ros2_ws/install/my_ddrobot/share/my_ddrobot/package.xml
+[2.287s] Invoked command in '/home/aniketh05/ros2_ws/build/my_ddrobot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aniketh05/my_ros2_ws/install/turtle_control:/home/aniketh05/my_ros2_ws/install/my_services:/home/aniketh05/my_ros2_ws/install/my_pkg_prac:/home/aniketh05/my_ros2_ws/install/my_pkg_01:/opt/ros/humble /usr/bin/cmake --install /home/aniketh05/ros2_ws/build/my_ddrobot

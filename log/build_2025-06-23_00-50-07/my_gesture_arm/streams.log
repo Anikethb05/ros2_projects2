@@ -1,0 +1,48 @@
+[0.042s] Invoking command in '/home/aniketh05/ros2_ws/build/my_gesture_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aniketh05/my_ros2_ws/install/turtle_control:/home/aniketh05/my_ros2_ws/install/my_services:/home/aniketh05/my_ros2_ws/install/my_pkg_prac:/home/aniketh05/my_ros2_ws/install/my_pkg_01:/opt/ros/humble /usr/bin/cmake /home/aniketh05/ros2_ws/src/my_gesture_arm -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aniketh05/ros2_ws/install/my_gesture_arm
+[0.345s] -- The C compiler identification is GNU 11.4.0
+[0.867s] -- The CXX compiler identification is GNU 11.4.0
+[1.340s] -- Detecting C compiler ABI info
+[1.531s] -- Detecting C compiler ABI info - done
+[1.537s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.537s] -- Detecting C compile features
+[1.537s] -- Detecting C compile features - done
+[1.539s] -- Detecting CXX compiler ABI info
+[1.704s] -- Detecting CXX compiler ABI info - done
+[1.709s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.709s] -- Detecting CXX compile features
+[1.710s] -- Detecting CXX compile features - done
+[1.712s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.858s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.919s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.951s] -- Found rclpy: 3.3.16 (/opt/ros/humble/share/rclpy/cmake)
+[1.955s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.225s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.234s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.253s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.279s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.307s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.367s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.390s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[2.451s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.456s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[2.493s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.506s] -- Looking for pthread.h
+[2.661s] -- Looking for pthread.h - found
+[2.661s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.794s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.795s] -- Found Threads: TRUE  
+[2.856s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[2.857s] -- Checking for module 'bullet>=2.82'
+[2.868s] --   Found bullet, version 3.05
+[3.000s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[3.042s] -- Found assimp: /usr/include (found version "5.2.0") 
+[3.066s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[3.100s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[3.538s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[3.544s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.553s] -- Searching for dependencies of ignition-math6
+[3.555s] -- Looking for OGRE...
+[3.555s] -- OGRE_PREFIX_WATCH changed.
+[3.559s] -- Checking for module 'OGRE'
+[3.568s] --   Found OGRE, version 1.9.0
+[3.592s] -- Found Ogre Ghadamon (1.9.0)

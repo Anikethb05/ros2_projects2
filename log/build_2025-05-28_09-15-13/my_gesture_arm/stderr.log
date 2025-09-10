@@ -1,5 +1,0 @@
-[31mCMake Error at CMakeLists.txt:1:
-  Parse error.  Expected a newline, got identifier with text "project".
-
-[0m
-gmake: *** [Makefile:226: cmake_check_build_system] Error 1
